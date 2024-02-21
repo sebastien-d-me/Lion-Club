@@ -1,5 +1,6 @@
 /** Fonts **/
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 
 /** Reset **/
@@ -14,7 +15,7 @@
 /** Variables **/
 :root {
     --black: #171A1E;
-    --blue: #0E86E8;
+    --blue: #41519E;
     --dark-blue: #06162A;
     --full-black: #000000;
     --full-white: #FFFFFF;
@@ -26,6 +27,11 @@
 
 
 /** General **/
+html, body {
+    scroll-behavior: smooth;
+    scroll-padding-top: 170px;
+}
+
 body {
     background-color: var(--dark-blue);
     display: flex;
@@ -106,7 +112,8 @@ body {
     display: flex;
     filter: drop-shadow(0 0 5px var(--full-black));
     flex-direction: column;
-    gap: 25px 0;
+    justify-content: center;
+    min-height: 400px;
     padding: 15px 20px;
     position: fixed;
     width: 100%;
@@ -124,7 +131,8 @@ body {
 
 /* Title */
 .header__title {
-    font-size: 42px;
+    font-family: "Pacifico", sans-serif;
+    font-size: 55px;
 }
 
 /* Logo */
@@ -167,6 +175,8 @@ body {
 /** Main **/
 .main__block {
     flex: 1 0 auto;
+    margin-top: 400px;
+    padding: 30px 20px;
 }
 
 
@@ -196,23 +206,69 @@ body {
 }
 
 
+/** Sections **/
+.section__block {
+
+}
+
+.section__title {
+    color: var(--full-white);
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/** About **/
+#about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+@keyframes pulse {
+	0% {
+		filter: drop-shadow(0 0 5px var(--blue));
+        transform: scale(0.95);
+	}
+
+	50% {
+		filter: drop-shadow(0 0 5px var(--blue));
+        transform: scale(1.05);
+	}
+
+	100% {
+        filter: drop-shadow(0 0 0 transparent);
+        transform: scale(0.95);
+	}
+}
+
+.about__logo {
+    /*animation: pulse 2s infinite;*/
+    display: block;
+    margin: auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+.about__description {
+    color: var(--full-white);
+    font-size: 24px;
+    margin: 10px auto;
+}
+
+
 /*** Responsive ***/
 @media screen and (min-width: 1150px) {
     /** Header **/
     .header__block {
         flex-direction: row;
         justify-content: space-between;
+        min-height: 160px;
         padding: 15px 30px;
     }
 
     /* Informations */
     .header__informations {
         flex-direction: row;
-    }
-
-    /* Title */
-    .header__title {
-        font-size: 30px;
     }
 
     /* Mobile */
@@ -231,14 +287,28 @@ body {
     }
 
     .nav__link {
-        font-size: 22px;
+        font-size: 28px;
     }
+
+
+    /** Main **/
+    .main__block {
+        margin-top: 160px;
+        padding: 30px 50px;
+    }
+
 
     /** Footer **/
     .footer__block {
         flex-direction: row;
         font-size: 20px;
         justify-content: space-between;
+    }
+
+
+    /** About **/
+    .about__description {
+        text-align: justify;
     }
 }
 
