@@ -67,46 +67,13 @@ body {
   text-transform: uppercase;
   transition: 0.5s;
 }
-
 .btn:hover {
   background-color: #03E9F4;
   box-shadow: 0 0 5px #03E9F4, 0 0 25px #03E9F4, 0 0 50px #03E9F4, 0 0 200px #03E9F4;
   color: #171A1E;
 }
 
-.btn span {
-  display: block;
-  position: absolute;
-}
-
-.btn span:nth-child(1) {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #03E9F4);
-  animation: animate1 1s linear infinite;
-}
-
-@keyframes animate1 {
-  0% {
-    left: -100%;
-  }
-  50%, 100% {
-    left: 100%;
-  }
-}
-.btn span:nth-child(2) {
-  top: -100px;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, #03E9F4);
-  animation: animate2 1s linear infinite;
-  animation-delay: 0.25s;
-}
-
-@keyframes animate2 {
+@keyframes borderTop {
   0% {
     top: -100%;
   }
@@ -114,17 +81,7 @@ body {
     top: 100%;
   }
 }
-.btn span:nth-child(3) {
-  bottom: 0;
-  right: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(270deg, transparent, #03E9F4);
-  animation: animate3 1s linear infinite;
-  animation-delay: 0.5s;
-}
-
-@keyframes animate3 {
+@keyframes borderRight {
   0% {
     right: -100%;
   }
@@ -132,17 +89,7 @@ body {
     right: 100%;
   }
 }
-.btn span:nth-child(4) {
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, #03E9F4);
-  animation: animate4 1s linear infinite;
-  animation-delay: 0.75s;
-}
-
-@keyframes animate4 {
+@keyframes borderBottom {
   0% {
     bottom: -100%;
   }
@@ -150,6 +97,54 @@ body {
     bottom: 100%;
   }
 }
+@keyframes borderLeft {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+.btn__border {
+  display: block;
+  position: absolute;
+}
+.btn__border:nth-child(1) {
+  animation: borderLeft 1s linear infinite;
+  background: linear-gradient(90deg, transparent, #03E9F4);
+  height: 2px;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.btn__border:nth-child(2) {
+  animation: borderTop 1s linear infinite;
+  animation-delay: 0.25s;
+  background: linear-gradient(180deg, transparent, #03E9F4);
+  height: 100%;
+  right: 0;
+  top: -100px;
+  width: 2px;
+}
+.btn__border:nth-child(3) {
+  animation: borderRight 1s linear infinite;
+  animation-delay: 0.5s;
+  background: linear-gradient(270deg, transparent, #03E9F4);
+  bottom: 0;
+  height: 2px;
+  right: -100%;
+  width: 100%;
+}
+.btn__border:nth-child(4) {
+  animation: borderBottom 1s linear infinite;
+  animation-delay: 0.75s;
+  background: linear-gradient(360deg, transparent, #03E9F4);
+  bottom: -100%;
+  height: 100%;
+  left: 0;
+  width: 2px;
+}
+
 /** Base - General **/
 /** Components - Link **/
 .link {
@@ -204,8 +199,6 @@ body {
 }
 
 @media screen and (min-width: 1150px) {
-  /** Content **/
-  /* Separator */
   .separator::before,
   .separator::after {
     margin: 0 25px;
