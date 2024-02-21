@@ -66,9 +66,10 @@
 
 .countdown__name {
     color: colors.$white-full;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
-    text-transform: uppercase;    
+    padding-bottom: 10px;
+    text-transform: uppercase;  
 }
   
 /// Responsive
@@ -81,5 +82,6 @@
     // Countdown
     .countdown {
         flex-direction: row;
+        padding: 30px 60px;
     }
 }

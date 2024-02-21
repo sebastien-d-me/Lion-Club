@@ -418,8 +418,9 @@ body {
 
 .countdown__name {
   color: #FFFFFF;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
+  padding-bottom: 10px;
   text-transform: uppercase;
 }
 
@@ -429,5 +430,6 @@ body {
   }
   .countdown {
     flex-direction: row;
+    padding: 30px 60px;
   }
 }/*# sourceMappingURL=style.css.map */
