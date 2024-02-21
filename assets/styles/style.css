@@ -16,6 +16,7 @@
 :root {
     --black: #171A1E;
     --blue: #41519E;
+    --cyan: #03E9F4;
     --dark-blue: #06162A;
     --full-black: #000000;
     --full-white: #FFFFFF;
@@ -41,6 +42,115 @@ body {
 
 
 /** Content **/
+/* Buttons */
+.btn {
+    color: var(--cyan);
+    display: inline-block;
+    font-size: 24px;
+    letter-spacing: 4px;
+    margin: 0 20px;
+    overflow: hidden;
+    padding: 25px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.btn:hover {
+    background-color: var(--cyan);
+    box-shadow: 0 0 5px var(--cyan), 0 0 25px var(--cyan), 0 0 50px var(--cyan), 0 0 200px var(--cyan);
+    color: var(--black);
+}
+.btn span {
+    display: block;
+    position: absolute;
+}
+.btn span:nth-child(1)
+{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--cyan));
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1
+{
+  0%
+  {
+    left: -100%;
+  }
+  50%, 100%
+  {
+    left: 100%;
+  }
+}
+.btn span:nth-child(2)
+{
+  top: -100px;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--cyan));
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2
+{
+  0%
+  {
+    top: -100%;
+  }
+  50%, 100%
+  {
+    top: 100%;
+  }
+}
+.btn span:nth-child(3)
+{
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, var(--cyan));
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate3
+{
+  0%
+  {
+    right: -100%;
+  }
+  50%, 100%
+  {
+    right: 100%;
+  }
+}
+.btn span:nth-child(4)
+{
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, var(--cyan));
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4
+{
+  0%
+  {
+    bottom: -100%;
+  }
+  50%, 100%
+  {
+    bottom: 100%;
+  }
+}
+
+
 /* Display */
 .show {
     display: flex!important;
@@ -108,7 +218,7 @@ body {
     font-size: 24px;
     flex: 1;
 	height: 2.5px;
-    margin: 0 25px;
+    margin: 0 15px;
 }
 
 /* Social */
@@ -264,8 +374,9 @@ body {
 .about__logo {
     /*animation: pulse 2s infinite;*/
     display: block;
+    height: 350px;
     margin: auto;
-    max-width: 600px;
+    object-fit: scale-down;
     width: 100%;
 }
 
@@ -278,6 +389,14 @@ body {
 
 /*** Responsive ***/
 @media screen and (min-width: 1150px) {
+    /** Content **/
+    /* Separator */
+    .separator::before,
+    .separator::after {
+        margin: 0 25px;
+    }
+
+
     /** Header **/
     .header__block {
         flex-direction: row;
