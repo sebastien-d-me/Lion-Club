@@ -1,0 +1,58 @@
+/** Layouts - Header **/
+@use "../abstracts/colors" as colors;
+
+
+.header__block {
+    align-items: center;
+    background-color: colors.$black;
+    color:colors.$full-white;
+    display: flex;
+    filter: drop-shadow(0 0 5px colors.$full-black);
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+// Informations
+.header__informations {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px 35px;
+}
+
+// Title
+.header__title {
+    font-family: "Pacifico", sans-serif;
+    font-size: 35px;
+}
+
+// Logo
+.header__logo {
+    background-color: colors.$full-white;
+    border-radius: 50%;
+    height: 130px;
+    object-fit: scale-down;
+    padding: 10px;
+    width: 130px;
+}
+
+/// Responsive
+@media screen and (min-width: 1150px) {
+    .header__block {
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: 160px;
+        padding: 15px 30px;
+    }
+
+    // Informations
+    .header__informations {
+        flex-direction: row;
+    }
+}

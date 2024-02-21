@@ -1,0 +1,15 @@
+/** Base - General **/
+@use "../abstracts/colors" as colors;
+
+
+html, body {
+    scroll-behavior: smooth;
+    scroll-padding-top: 170px;
+}
+
+body {
+    background-color: colors.$dark-blue;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

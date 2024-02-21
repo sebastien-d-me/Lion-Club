@@ -1,0 +1,10 @@
+/** Layouts - Section **/
+@use "../abstracts/colors" as colors;
+
+
+.section__title {
+    color: colors.$full-white;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}

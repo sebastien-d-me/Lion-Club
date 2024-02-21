@@ -1,0 +1,14 @@
+/** Layouts - Main **/
+.main__block {
+    flex: 1 0 auto;
+    margin-top: 400px;
+    padding: 30px 20px;
+}
+
+/// Responsive
+@media screen and (min-width: 1150px) {
+    .main__block {
+        margin-top: 160px;
+        padding: 30px 50px;
+    }
+}

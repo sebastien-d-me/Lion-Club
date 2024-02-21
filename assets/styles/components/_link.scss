@@ -1,0 +1,39 @@
+/** Components - Link **/
+@use "../abstracts/colors" as colors;
+
+
+.link {
+    background-image: linear-gradient(to right, colors.$orange, colors.$pink 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    color: colors.$full-white;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px 0;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &:before {
+        background-color: colors.$mauve;
+        bottom: -3px;
+        content: "";
+        display: block;
+        height: 3px;
+        left: 0;
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+        width: 0;
+    }
+
+    &:hover {
+        background-position: 0;
+    }
+
+    &:hover:before {
+        width: 100%;
+    }
+}

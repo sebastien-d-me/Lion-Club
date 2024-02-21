@@ -1,0 +1,52 @@
+/** Sections - About **/
+@use "../abstracts/colors" as colors;
+
+
+#about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+
+// Logo
+@keyframes pulse {
+	0% {
+		filter: drop-shadow(0 0 5px colors.$blue);
+        transform: scale(0.95);
+	}
+
+	50% {
+		filter: drop-shadow(0 0 5px colors.$blue);
+        transform: scale(1.05);
+	}
+
+	100% {
+        filter: drop-shadow(0 0 0 transparent);
+        transform: scale(0.95);
+	}
+}
+
+.about__logo {
+    /*animation: pulse 2s infinite;*/
+    display: block;
+    height: 350px;
+    margin: auto;
+    object-fit: scale-down;
+    width: 100%;
+}
+
+// Description
+.about__description {
+    color: colors.$full-white;
+    font-size: 20px;
+    margin: 10px auto;
+}
+
+
+/// Responsive
+@media screen and (min-width: 1150px) {
+    // Description
+    .about__description {
+        text-align: justify;
+    }
+}

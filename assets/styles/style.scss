@@ -1,0 +1,19 @@
+/** Base **/
+@use "./base/fonts";
+@use "./base/content";
+@use "./base/general";
+
+/** Components **/
+@use "./components/button";
+@use "./components/link";
+@use "./components/separator";
+
+/** Layouts **/
+@use "./layouts/header";
+@use "./layouts/navbar";
+@use "./layouts/main";
+@use "./layouts/section";
+@use "./layouts/footer";
+
+/** Sections **/
+@use "./sections/about";

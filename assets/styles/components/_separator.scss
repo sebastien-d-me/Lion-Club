@@ -1,0 +1,30 @@
+/** Components - Separator **/
+@use "../abstracts/colors" as colors;
+
+
+.separator {
+	align-items: center;
+    color: colors.$full-white;
+    display: flex;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    &::before,
+    &::after {
+        background: colors.$pink;
+        content: "";
+        font-size: 24px;
+        flex: 1;
+        height: 2.5px;
+        margin: 0 15px;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    /** Content **/
+    /* Separator */
+    .separator::before,
+    .separator::after {
+        margin: 0 25px;
+    }
+}

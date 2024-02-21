@@ -1,0 +1,54 @@
+/** Layouts - Navbar **/
+// Mobile
+.nav__mobile {
+    height: 64px;
+    width: 64px;
+}
+
+// List
+.nav__list {
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+}
+
+// Item
+.nav__item {
+    display: flex;
+
+    &--separator {
+        transform: rotate(90deg);
+    }
+    &--icons {
+        gap: 0 25px;
+    }
+}
+
+/// Responsive
+@media screen and (min-width: 1150px) {
+    // Mobile
+    .nav__mobile {
+        display: none;
+    }
+
+    // List
+    .nav__list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    // Item
+    .nav__item--separator {
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    // List
+    .nav__list {
+        gap: 0 35px;
+    }
+}

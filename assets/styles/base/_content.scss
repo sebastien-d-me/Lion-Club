@@ -1,0 +1,39 @@
+/** Base - Content **/
+* {
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+// Display
+.show {
+    display: flex!important;
+}
+
+.hide {
+    display: none!important;
+}
+
+// Blur
+.blur {
+    filter: blur(25px);
+}
+
+// Overflow
+.overflow--hide {
+    overflow: hidden;
+}
+
+
+// Social Icons
+.social__icon {
+    display: flex;
+    gap: 0 25px;
+    transition: 0.5s;
+    width: 28px;
+
+    &:hover {
+        filter: invert(35%) sepia(52%) saturate(1892%) hue-rotate(308deg) brightness(86%) contrast(91%);
+    }
+}
