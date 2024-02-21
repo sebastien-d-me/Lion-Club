@@ -13,9 +13,132 @@
 
 /** Variables **/
 :root {
+    --black: #000000;
     --blue: #06162A;
     --orange: #E8530E;
     --mauve: #AE3C8E;
     --pink: #D43C70;
     --violet: #794897;
+    --white: #FFFFFF;
+}
+
+
+/** Content **/
+.link {
+    color: var(--white);
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s;
+}
+  
+
+/** Header **/
+.header__block {
+    align-items: center;
+    background-color: var(--blue);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 25px 0;
+    padding: 15px 20px;
+}
+
+/* Informations */
+.header__informations {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* Title */
+.header__title {
+    font-size: 42px;
+}
+
+/* Logo */
+.header__logo {
+    background-color: var(--white);
+    border-radius: 50%;
+    height: 150px;
+    object-fit: scale-down;
+    padding: 10px;
+    width: 150px;
+}
+
+/* Mobile */
+.header__menu {
+    height: 64px;
+    width: 64px;
+}
+
+/* Nav */
+.header__nav {
+    display: none;
+}
+
+
+/*** Responsive ***/
+@media screen and (min-width: 992px) {
+    /** Header **/
+    .header__block {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 25px 35px;
+    }
+
+    /* Informations */
+    .header__informations {
+        flex-direction: row;
+    }
+
+    /* Mobile */
+    .header__menu {
+        display: none;
+    }
+
+    /* Nav */
+    .header__nav {
+        display: flex;
+    }
+
+    .nav__list {
+        display: flex;
+        gap: 0 35px;
+        list-style: none;
+    }
+
+    .nav__link {
+        background-clip: text;
+        background-image: linear-gradient(to right, var(--orange), var(--pink) 50%, #ffffff 50%);
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        -webkit-text-fill-color: transparent;
+    }
+      
+    .nav__link:before {
+        background-color: var(--mauve);
+        bottom: -3px;
+        content: "";
+        display: block;
+        height: 3px;
+        left: 0;
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+        width: 0;
+    }
+      
+    .nav__link:hover {
+        background-position: 0;
+    }
+      
+    .nav__link:hover::before {
+        width: 100%;
+    }
 }
