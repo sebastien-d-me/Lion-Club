@@ -22,3 +22,10 @@ navLinks.forEach(navLink => {
         navLink.addEventListener("click", mobileMenu);
     }
 });
+
+
+/** Footer **/
+const footerCopyright = document.querySelector(".footer__copyright");
+const currentYear = new Date().getFullYear();
+
+footerCopyright.insertAdjacentHTML("beforeend", currentYear);
