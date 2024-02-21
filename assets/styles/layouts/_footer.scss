@@ -5,9 +5,9 @@
 .footer__block {
     align-items: center;
     background-color: colors.$black;
-    color: colors.$full-white;
+    color: colors.$white-full;
     display: flex;
-    filter: drop-shadow(-5px 0 2.5px colors.$full-black);
+    filter: drop-shadow(-5px 0 2.5px colors.$black-full);
     flex-direction: column;
     gap: 20px;
     padding: 15px 20px;

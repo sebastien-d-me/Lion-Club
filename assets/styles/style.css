@@ -208,7 +208,7 @@ body {
 /** Layouts - Header **/
 .header__block {
   align-items: center;
-  background-color: #171A1E;
+  background-color: rgba(23, 26, 30, 0.5803921569);
   color: #FFFFFF;
   display: flex;
   filter: drop-shadow(0 0 5px #000000);

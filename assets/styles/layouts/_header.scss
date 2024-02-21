@@ -4,10 +4,10 @@
 
 .header__block {
     align-items: center;
-    background-color: colors.$black;
-    color:colors.$full-white;
+    background-color: colors.$black-transparent;
+    color:colors.$white-full;
     display: flex;
-    filter: drop-shadow(0 0 5px colors.$full-black);
+    filter: drop-shadow(0 0 5px colors.$black-full);
     flex-direction: column;
     justify-content: center;
     min-height: 285px;
@@ -34,7 +34,7 @@
 
 // Logo
 .header__logo {
-    background-color: colors.$full-white;
+    background-color: colors.$white-full;
     border-radius: 50%;
     height: 100px;
     object-fit: scale-down;

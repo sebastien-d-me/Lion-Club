@@ -37,17 +37,17 @@
 
 // Description
 .about__description {
-    color: colors.$full-white;
+    color: colors.$white-full;
     font-size: 20px;
     margin: 10px auto;
 }
 
 // Countdown
 .countdown {
-    background-color: colors.$full-black;
+    background-color: colors.$black-full;
     border-radius: 5px;
     display: flex;
-    filter: drop-shadow(0 0 5px colors.$full-black);
+    filter: drop-shadow(0 0 5px colors.$black-full);
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px 0;
@@ -65,7 +65,7 @@
 }
 
 .countdown__name {
-    color: colors.$full-white;
+    color: colors.$white-full;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;    
