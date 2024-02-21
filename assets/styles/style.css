@@ -92,6 +92,25 @@ body {
     width: 100%;
 }
 
+/* Separator */
+.separator {
+	align-items: center;
+    color: var(--full-white);
+    display: flex;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.separator::before,
+.separator::after {
+	background: var(--pink);
+	content: "";
+    font-size: 24px;
+    flex: 1;
+	height: 2.5px;
+    margin: 0 25px;
+}
+
 /* Social */
 .social__icon {
     display: flex;
@@ -132,7 +151,7 @@ body {
 /* Title */
 .header__title {
     font-family: "Pacifico", sans-serif;
-    font-size: 55px;
+    font-size: 35px;
 }
 
 /* Logo */
@@ -224,6 +243,7 @@ body {
     flex-direction: column;
     gap: 20px 0;
 }
+
 @keyframes pulse {
 	0% {
 		filter: drop-shadow(0 0 5px var(--blue));
@@ -251,7 +271,7 @@ body {
 
 .about__description {
     color: var(--full-white);
-    font-size: 24px;
+    font-size: 20px;
     margin: 10px auto;
 }
 
@@ -284,10 +304,6 @@ body {
 
     .nav__item--separator {
         transform: rotate(0deg);
-    }
-
-    .nav__link {
-        font-size: 28px;
     }
 
 
