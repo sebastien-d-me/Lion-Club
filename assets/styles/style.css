@@ -13,13 +13,24 @@
 
 /** Variables **/
 :root {
-    --black: #000000;
-    --blue: #06162A;
+    --black: #171A1E;
+    --blue: #0E86E8;
+    --dark-blue: #06162A;
+    --full-black: #000000;
+    --full-white: #FFFFFF;
     --orange: #E8530E;
     --mauve: #AE3C8E;
-    --pink: #D43C70;
+    --pink: #FF7CAA;
     --violet: #794897;
-    --white: #FFFFFF;
+}
+
+
+/** General **/
+body {
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 
@@ -43,7 +54,7 @@
 
 /* Link */
 .link {
-    color: var(--white);
+    color: var(--full-white);
     font-weight: 400;
     text-decoration: none;
     transition: 0.5s;
@@ -53,12 +64,15 @@
 /** Header **/
 .header__block {
     align-items: center;
-    background-color: var(--blue);
-    color: var(--white);
+    background-color: var(--black);
+    color: var(--full-white);
     display: flex;
+    filter: drop-shadow(0 0 5px var(--full-black));
     flex-direction: column;
     gap: 25px 0;
     padding: 15px 20px;
+    position: fixed;
+    width: 100%;
 }
 
 /* Informations */
@@ -77,12 +91,12 @@
 
 /* Logo */
 .header__logo {
-    background-color: var(--white);
+    background-color: var(--full-white);
     border-radius: 50%;
-    height: 150px;
+    height: 130px;
     object-fit: scale-down;
     padding: 10px;
-    width: 150px;
+    width: 130px;
 }
 
 /* Mobile */
@@ -152,13 +166,22 @@
 }
 
 
+/** Main **/
+.main__block {
+    flex: 1 0 auto;
+}
+
+
+/** Footer **/
+
+
 /*** Responsive ***/
 @media screen and (min-width: 1150px) {
     /** Header **/
     .header__block {
         flex-direction: row;
         justify-content: space-between;
-        padding: 25px 35px;
+        padding: 15px 30px;
     }
 
     /* Informations */
