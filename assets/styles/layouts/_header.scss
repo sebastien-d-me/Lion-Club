@@ -10,7 +10,7 @@
     filter: drop-shadow(0 0 5px colors.$full-black);
     flex-direction: column;
     justify-content: center;
-    min-height: 400px;
+    min-height: 285px;
     padding: 15px 20px;
     position: fixed;
     width: 100%;
@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 25px 35px;
+    gap: 10px 35px;
 }
 
 // Title
@@ -36,10 +36,10 @@
 .header__logo {
     background-color: colors.$full-white;
     border-radius: 50%;
-    height: 130px;
+    height: 100px;
     object-fit: scale-down;
     padding: 10px;
-    width: 130px;
+    width: 100px;
 }
 
 /// Responsive
@@ -54,5 +54,11 @@
     // Informations
     .header__informations {
         flex-direction: row;
+    }
+
+    // Logo
+    .header__logo {
+        height: 130px;
+        width: 130px;
     }
 }

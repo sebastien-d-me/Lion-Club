@@ -24,6 +24,11 @@ navLinks.forEach(navLink => {
 
 
 /** About - Countdown **/
+const countdownDays = document.querySelector(".countdown__value--days");
+const countdownHours = document.querySelector(".countdown__value--hours");
+const countdownMinutes = document.querySelector(".countdown__value--minutes");
+const countdownSecondes = document.querySelector(".countdown__value--seconds");
+
 
 
 /** Footer **/
