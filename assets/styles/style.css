@@ -73,6 +73,7 @@ body {
     padding: 15px 20px;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 /* Informations */
