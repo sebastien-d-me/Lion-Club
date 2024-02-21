@@ -13,7 +13,9 @@
 @use "./layouts/navbar";
 @use "./layouts/main";
 @use "./layouts/section";
+@use "./layouts/grid";
 @use "./layouts/footer";
 
 /** Sections **/
 @use "./sections/about";
+@use "./sections/gallery";

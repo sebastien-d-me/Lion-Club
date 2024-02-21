@@ -38,10 +38,10 @@ const countdown = setInterval(function() {
     const countdownMinutesValue = Math.floor((diffDate % (1000 * 60 * 60)) / (1000 * 60));
     const countdownSecondesValue = Math.floor((diffDate % (1000 * 60)) / 1000);
 
-    countdownDays.textContent = countdownDaysValue;
-    countdownHours.textContent = countdownHoursValue;
-    countdownMinutes.textContent = countdownMinutesValue;
-    countdownSecondes.textContent = countdownSecondesValue;
+    countdownDays.textContent = countdownDaysValue > 10 ? countdownDaysValue : `0${countdownDaysValue}`;
+    countdownHours.textContent = countdownHoursValue > 10 ? countdownHoursValue : `0${countdownHoursValue}`;
+    countdownMinutes.textContent = countdownMinutesValue > 10 ? countdownMinutesValue : `0${countdownMinutesValue}`;
+    countdownSecondes.textContent = countdownSecondesValue > 10 ? countdownSecondesValue : `0${countdownSecondesValue}`;
 
     if (diffDate < 0) {
         clearInterval(countdown);

@@ -2,9 +2,25 @@
 @use "../abstracts/colors" as colors;
 
 
+.section__block {
+    padding: 20px;
+    
+    &:nth-child(even) {
+        background-color: colors.$dark-blue-2;
+    }
+}
+
+// Title
 .section__title {
     color: colors.$white-full;
     font-size: 50px;
     text-align: center;
     text-transform: uppercase;
+}
+
+/// Responsive
+@media screen and (min-width: 1150px) {
+    .section__block {
+        padding: 20px 50px;
+    }
 }
