@@ -42,11 +42,44 @@
     margin: 10px auto;
 }
 
+// Countdown
+.countdown {
+    background-color: colors.$full-black;
+    border-radius: 5px;
+    display: flex;
+    filter: drop-shadow(0 0 5px colors.$full-black);
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px 0;
+    justify-content: space-between;
+    padding: 30px;
+}
+  
+.countdown__type {
+    text-align: center;        
+}
 
+.countdown__value {
+    color: colors.$blue;
+    font-size: 80px;
+}
+
+.countdown__name {
+    color: colors.$full-white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;    
+}
+  
 /// Responsive
 @media screen and (min-width: 1150px) {
     // Description
     .about__description {
         text-align: justify;
+    }
+
+    // Countdown
+    .countdown {
+        flex-direction: row;
     }
 }

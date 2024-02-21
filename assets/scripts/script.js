@@ -1,6 +1,5 @@
-const htmlTag = document.querySelector("html");
-
 /** Menu **/
+const htmlTag = document.querySelector("html");
 const openMenu = document.querySelector(".nav__mobile--open");
 const closeMenu = document.querySelector(".nav__mobile--close");
 const navList = document.querySelector(".nav__list");
@@ -22,6 +21,9 @@ navLinks.forEach(navLink => {
         navLink.addEventListener("click", mobileMenu);
     }
 });
+
+
+/** About - Countdown **/
 
 
 /** Footer **/

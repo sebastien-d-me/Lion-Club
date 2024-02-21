@@ -54,11 +54,10 @@ body {
 /** Base - General **/
 /** Components - Button **/
 .btn {
-  color: #03E9F4;
+  color: #AE3C8E;
   display: inline-block;
   font-size: 24px;
   letter-spacing: 4px;
-  margin: 0 20px;
   overflow: hidden;
   padding: 25px 30px;
   position: relative;
@@ -68,9 +67,9 @@ body {
   transition: 0.5s;
 }
 .btn:hover {
-  background-color: #03E9F4;
-  box-shadow: 0 0 5px #03E9F4, 0 0 25px #03E9F4, 0 0 50px #03E9F4, 0 0 200px #03E9F4;
-  color: #171A1E;
+  background-color: #AE3C8E;
+  box-shadow: 0 0 5px #AE3C8E, 0 0 25px #AE3C8E, 0 0 50px #AE3C8E, 0 0 200px #AE3C8E;
+  color: #FFFFFF;
 }
 
 @keyframes borderTop {
@@ -111,7 +110,7 @@ body {
 }
 .btn__border:nth-child(1) {
   animation: borderLeft 1s linear infinite;
-  background: linear-gradient(90deg, transparent, #03E9F4);
+  background: linear-gradient(90deg, transparent, #AE3C8E);
   height: 2px;
   left: 0;
   top: 0;
@@ -120,7 +119,7 @@ body {
 .btn__border:nth-child(2) {
   animation: borderTop 1s linear infinite;
   animation-delay: 0.25s;
-  background: linear-gradient(180deg, transparent, #03E9F4);
+  background: linear-gradient(180deg, transparent, #AE3C8E);
   height: 100%;
   right: 0;
   top: -100px;
@@ -129,7 +128,7 @@ body {
 .btn__border:nth-child(3) {
   animation: borderRight 1s linear infinite;
   animation-delay: 0.5s;
-  background: linear-gradient(270deg, transparent, #03E9F4);
+  background: linear-gradient(270deg, transparent, #AE3C8E);
   bottom: 0;
   height: 2px;
   right: -100%;
@@ -138,7 +137,7 @@ body {
 .btn__border:nth-child(4) {
   animation: borderBottom 1s linear infinite;
   animation-delay: 0.75s;
-  background: linear-gradient(360deg, transparent, #03E9F4);
+  background: linear-gradient(360deg, transparent, #AE3C8E);
   bottom: -100%;
   height: 100%;
   left: 0;
@@ -392,8 +391,39 @@ body {
   margin: 10px auto;
 }
 
+.countdown {
+  background-color: #000000;
+  border-radius: 5px;
+  display: flex;
+  filter: drop-shadow(0 0 5px #000000);
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px 0;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.countdown__type {
+  text-align: center;
+}
+
+.countdown__value {
+  color: #41519E;
+  font-size: 80px;
+}
+
+.countdown__name {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 1150px) {
   .about__description {
     text-align: justify;
+  }
+  .countdown {
+    flex-direction: row;
   }
 }/*# sourceMappingURL=style.css.map */
