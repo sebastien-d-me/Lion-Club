@@ -14,7 +14,7 @@
 // Title
 .section__title {
     color: colors.$white-full;
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
@@ -24,5 +24,10 @@
 @media screen and (min-width: 1150px) {
     .section__block {
         padding: 20px 50px;
+    }
+
+    // Title
+    .section__title {
+        font-size: 50px;
     }
 }
