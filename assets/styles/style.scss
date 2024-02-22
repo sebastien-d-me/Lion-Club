@@ -1,3 +1,6 @@
+/** Vendors **/
+@use "./vendors/glider.min.css";
+
 /** Base **/
 @use "./base/fonts";
 @use "./base/content";
@@ -24,3 +27,6 @@
 @use "./sections/team";
 @use "./sections/gallery";
 @use "./sections/contact";
+
+/** Pages **/
+@use "./pages/legal_notice";
