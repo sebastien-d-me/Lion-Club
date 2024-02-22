@@ -35,14 +35,15 @@
 
 // Gallery
 .character__pictures {
-    align-items: end;
     display: flex;
     flex-direction: column;
-    gap: 20px 0;
+    gap: 30px 0;
     justify-content: center;
 }
 
 .character__picture {
     border: 1px solid colors.$white-full;
-    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    width: 100%;
 }
