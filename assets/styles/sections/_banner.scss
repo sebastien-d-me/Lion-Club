@@ -1,0 +1,26 @@
+/** Layouts - Banner **/
+@use "../abstracts/colors" as colors;
+
+
+.banner {
+    border-top: 1px inset colors.$black-full;
+    position: relative;
+}
+
+// Video
+.banner__video {
+    display: flex;
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+// Overlay 
+.banner__video_overlay {
+    background-color: colors.$black-transparent;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

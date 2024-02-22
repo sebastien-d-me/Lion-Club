@@ -23,6 +23,7 @@
 @use "./layouts/footer";
 
 /** Sections **/
+@use "./sections/banner";
 @use "./sections/about";
 @use "./sections/team";
 @use "./sections/gallery";

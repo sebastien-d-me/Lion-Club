@@ -534,7 +534,6 @@ body {
 .main__block {
   flex: 1 0 auto;
   margin-top: 220px;
-  padding-top: 5px;
 }
 
 @media screen and (min-width: 1150px) {
@@ -751,6 +750,30 @@ textarea.form__input {
   }
 }
 /** Sections **/
+/** Base - General **/
+/** Layouts - Banner **/
+.banner {
+  border-top: 1px inset #000000;
+  position: relative;
+}
+
+.banner__video {
+  display: flex;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.banner__video_overlay {
+  background-color: rgba(23, 26, 30, 0.5803921569);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 /** Base - General **/
 /** Sections - About **/
 #about {
