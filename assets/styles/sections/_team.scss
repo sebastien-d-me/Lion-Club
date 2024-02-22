@@ -1,0 +1,48 @@
+/** Sections - Team **/
+@use "../abstracts/colors" as colors;
+
+
+.teams__list {
+    background-color: colors.$black;
+    filter: drop-shadow(0 0 5px #000000);
+    padding: 10px 20px;
+}
+
+// Characters
+.team__character {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+// Informations
+.character__informations {
+    color: colors.$white-full;
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    justify-content: center;
+    list-style: none;
+}
+
+// Image
+.character__image {
+    background-color: colors.$orange;
+    display: flex;
+    filter: drop-shadow(0 0 5px colors.$orange);
+    margin: 10px auto;
+    padding: 5px;
+}
+
+// Gallery
+.character__pictures {
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    justify-content: center;
+}
+
+.character__picture {
+    border: 1px solid colors.$white-full;
+    width: 250px;
+}

@@ -7,19 +7,19 @@ const navLinks = document.querySelectorAll(".nav__link");
 const mainBlock = document.querySelector(".main__block");
 
 function mobileMenu() {
-    htmlTag.classList.toggle("overflow--hide");
-    openMenu.classList.toggle("hide");
-    navList.classList.toggle("show");
-    mainBlock.classList.toggle("blur");
+    if (window.innerWidth < 1150) {
+        htmlTag.classList.toggle("overflow--hide");
+        openMenu.classList.toggle("hide");
+        navList.classList.toggle("show");
+        mainBlock.classList.toggle("blur");
+    }
 }
 
 openMenu.addEventListener("click", mobileMenu);
 closeMenu.addEventListener("click", mobileMenu);
 
 navLinks.forEach(navLink => {
-    if (window.innerWidth < 1150) {
-        navLink.addEventListener("click", mobileMenu);
-    }
+    navLink.addEventListener("click", mobileMenu);
 });
 
 
@@ -33,20 +33,28 @@ const countdown = setInterval(function() {
     const currentDate = new Date().getTime();
     const eventDate = new Date("07/01/2024").getTime();
     const diffDate = eventDate - currentDate;
+    
     const countdownDaysValue = Math.floor(diffDate / (1000 * 60 * 60 * 24));
     const countdownHoursValue = Math.floor((diffDate % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const countdownMinutesValue = Math.floor((diffDate % (1000 * 60 * 60)) / (1000 * 60));
     const countdownSecondesValue = Math.floor((diffDate % (1000 * 60)) / 1000);
 
-    countdownDays.textContent = countdownDaysValue > 10 ? countdownDaysValue : `0${countdownDaysValue}`;
-    countdownHours.textContent = countdownHoursValue > 10 ? countdownHoursValue : `0${countdownHoursValue}`;
-    countdownMinutes.textContent = countdownMinutesValue > 10 ? countdownMinutesValue : `0${countdownMinutesValue}`;
-    countdownSecondes.textContent = countdownSecondesValue > 10 ? countdownSecondesValue : `0${countdownSecondesValue}`;
+    countdownDays.textContent = countdownDaysValue >= 10 ? countdownDaysValue : `0${countdownDaysValue}`;
+    countdownHours.textContent = countdownHoursValue >= 10 ? countdownHoursValue : `0${countdownHoursValue}`;
+    countdownMinutes.textContent = countdownMinutesValue >= 10 ? countdownMinutesValue : `0${countdownMinutesValue}`;
+    countdownSecondes.textContent = countdownSecondesValue >= 10 ? countdownSecondesValue : `0${countdownSecondesValue}`;
 
     if (diffDate < 0) {
         clearInterval(countdown);
     }
 }, 1000);
+
+
+/** About - Teams **/
+new Glider(document.querySelector(".glider"), {
+    dots: "#dots",
+    slidesToShow: 1,
+});
 
 
 

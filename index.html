@@ -7,6 +7,7 @@
     <meta name="description" content="Rendez-vous le 01/07/2024 au Queen à Paris.">
     <title>Évènement Lion Club</title>
     <link rel="icon" href="./assets/images/logo/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
@@ -28,13 +29,13 @@
                     <a class="link nav__link" href="#about">À propos</a>
                 </li>
                 <li class="nav__item">
-                    <a class="link nav__link" href="#">Réservation</a>
+                    <a class="link nav__link" href="#team">Nos DJ</a>
                 </li>
                 <li class="nav__item">
-                    <a class="link nav__link" href="#">Galerie photos</a>
+                    <a class="link nav__link" href="#gallery">Galerie photos</a>
                 </li>
                 <li class="nav__item">
-                    <a class="link nav__link" href="#">Contact</a>
+                    <a class="link nav__link" href="#contact">Contact</a>
                 </li>
                 <li class="nav__item--separator">
                     <span>|</span>
@@ -106,24 +107,111 @@
             </a>
         </section>
 
+        <!-- Nos DJ -->
+        <section class="section__block" id="team">
+            <h2 class="section__title">Nos DJ</h2>
+            <div class="teams__list">
+                <div class="glider">
+                    <div class="team__character">
+                        <ul class="character__informations">
+                            <li>
+                                <strong>Nom :</strong> DJ Infinitix
+                            </li>
+                            <li>
+                                <strong>Choix musicaux :</strong> Deep House, Electro Pop
+                            </li>
+                            <li>
+                                <strong>Jours :</strong> Vendredi, Dimanche
+                            </li>
+                            <li>
+                                <strong>Horaires :</strong> 22h - 23h30
+                            </li>
+                            <li>
+                                <strong>Nationalité :</strong> Danoise
+                            </li>
+                        </ul>
+                        <img alt="DJ Infinitix" class="character__image" loading="lazy" src="./assets/images/dj/dj_infinitix.png">
+                        <div class="character__pictures">
+                            <img alt="" class="character__picture" src="./assets/images/dj/slider/dj_1_1.webp">
+                            <img alt="" class="character__picture" src="./assets/images/dj/slider/dj_1_2.webp">
+                        </div>
+                    </div>
+                    <div class="team__character">
+                        <ul class="character__informations">
+                            <li>
+                                <strong>Nom :</strong> DJ Pulse
+                            </li>
+                            <li>
+                                <strong>Choix musicaux :</strong> Deep House, Electro Pop
+                            </li>
+                            <li>
+                                <strong>Jours :</strong> Vendredi, Dimanche
+                            </li>
+                            <li>
+                                <strong>Horaires :</strong> 22h - 23h30
+                            </li>
+                            <li>
+                                <strong>Nationalité :</strong> Danoise
+                            </li>
+                        </ul>
+                        <img alt="DJ Pulse" class="character__image" loading="lazy" src="./assets/images/dj/dj_pulse.png">
+                        <div class="character__pictures">
+                            <img alt="Illustration DJ 2 - 1" class="character__picture" src="./assets/images/dj/slider/dj_2_1.webp">
+                            <img alt="Illustration DJ 2 - 2" class="character__picture" src="./assets/images/dj/slider/dj_2_2.webp">
+                        </div>
+                    </div>
+                    <div class="team__character">
+                        <ul class="character__informations">
+                            <li>
+                                <strong>Nom :</strong> DJ Sonato
+                            </li>
+                            <li>
+                                <strong>Choix musicaux :</strong> Deep House, Electro Pop
+                            </li>
+                            <li>
+                                <strong>Jours :</strong> Vendredi, Dimanche
+                            </li>
+                            <li>
+                                <strong>Horaires :</strong> 22h - 23h30
+                            </li>
+                            <li>
+                                <strong>Nationalité :</strong> Danoise
+                            </li>
+                        </ul>
+                        <img alt="DJ Infinitix" class="character__image" loading="lazy" src="./assets/images/dj/dj_sonato.png">
+                        <div class="character__pictures">
+                            <img alt="Illustration DJ 3 - 1" class="character__picture" src="./assets/images/dj/slider/dj_3_1.webp">
+                            <img alt="Illustration DJ 3 - 2" class="character__picture" src="./assets/images/dj/slider/dj_3_2.webp">
+                        </div>
+                    </div>
+                </div>
+                <div id="dots"></div>
+            </div>
+        </section>
+
         <!-- Gallery -->
         <section class="section__block" id="gallery">
-            <h2 class="section__title">Galerie de photos</h2>
+            <h2 class="section__title">Galerie photos</h2>
             <div class="grid__container">
                 <!-- Mettre titre photo sur photo + modal ouvrir grand -->
-                <img alt="X" class="grid__img grid__img--large" loading="lazy" src="./assets/images/ambiances/ambiance_bleue.webp">
-                <img alt="X" class="grid__img grid__img--medium" loading="lazy" src="./assets/images/bars/bar_bleu_jaune.webp">
-                <img alt="X" class="grid__img grid__img--small" loading="lazy" src="./assets/images/ambiances/ambiance_final.webp">
-                <img alt="X" class="grid__img grid__img--large" loading="lazy" src="./assets/images/bars/bar_jaune.webp">
-                <img alt="X" class="grid__img grid__img--small" loading="lazy" src="./assets/images/ambiances/ambiance_jaune.webp">
-                <img alt="X" class="grid__img grid__img--medium" loading="lazy" src="./assets/images/bars/bar_neon.webp">
-                <img alt="X" class="grid__img grid__img--large" loading="lazy" src="./assets/images/ambiances/ambiance_paillette.webp">
-                <img alt="X" class="grid__img grid__img--medium" loading="lazy" src="./assets/images/bars/bar_noir.jpg">
-                <img alt="X" class="grid__img grid__img--small" loading="lazy" src="./assets/images/ambiances/ambiance_rouge.webp">
-                <img alt="X" class="grid__img grid__img--large" loading="lazy" src="./assets/images/bars/bar_sombre.webp">
-                <img alt="X" class="grid__img grid__img--small" loading="lazy" src="./assets/images/ambiances/ambiance_violette.webp">
-                <img alt="X" class="grid__img grid__img--medium" loading="lazy" src="./assets/images/bars/bar_violet.webp">
+                <img alt="Salle d'ambiance bleue" class="grid__img grid__img--large" loading="lazy" src="./assets/images/ambiances/ambiance_bleue.webp">
+                <img alt="Bar bleu et jaune" class="grid__img grid__img--medium" loading="lazy" src="./assets/images/bars/bar_bleu_jaune.webp">
+                <img alt="Salle d'ambiance final" class="grid__img grid__img--small" loading="lazy" src="./assets/images/ambiances/ambiance_final.webp">
+                <img alt="Bar jaune" class="grid__img grid__img--large" loading="lazy" src="./assets/images/bars/bar_jaune.webp">
+                <img alt="Salle d'ambiance jaune" class="grid__img grid__img--small" loading="lazy" src="./assets/images/ambiances/ambiance_jaune.webp">
+                <img alt="Bar néon" class="grid__img grid__img--medium" loading="lazy" src="./assets/images/bars/bar_neon.webp">
+                <img alt="Salle d'ambiance paillette" class="grid__img grid__img--large" loading="lazy" src="./assets/images/ambiances/ambiance_paillette.webp">
+                <img alt="Bar noir" class="grid__img grid__img--medium" loading="lazy" src="./assets/images/bars/bar_noir.webp">
+                <img alt="Salle d'ambiance rouge" class="grid__img grid__img--small" loading="lazy" src="./assets/images/ambiances/ambiance_rouge.webp">
+                <img alt="Bar sombre" class="grid__img grid__img--large" loading="lazy" src="./assets/images/bars/bar_sombre.webp">
+                <img alt="Salle d'ambiance violette" class="grid__img grid__img--small" loading="lazy" src="./assets/images/ambiances/ambiance_violette.webp">
+                <img alt="Bar violet" class="grid__img grid__img--medium" loading="lazy" src="./assets/images/bars/bar_violet.webp">
             </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section__block" id="contact">
+            <h2 class="section__title">Nous contacter</h2>
         </section>
     </main>
 
@@ -147,6 +235,7 @@
     </footer>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <script src="./assets/scripts/script.js"></script>
 </body>
 </html>

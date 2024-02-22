@@ -7,6 +7,7 @@
     
     &:nth-child(even) {
         background-color: colors.$dark-blue-2;
+        border-top: 1px inset colors.$black-full;
     }
 }
 
@@ -14,6 +15,7 @@
 .section__title {
     color: colors.$white-full;
     font-size: 50px;
+    margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
 }

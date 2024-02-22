@@ -305,7 +305,7 @@ body {
 .main__block {
   flex: 1 0 auto;
   margin-top: 285px;
-  padding-top: 30px;
+  padding-top: 5px;
 }
 
 @media screen and (min-width: 1150px) {
@@ -320,11 +320,13 @@ body {
 }
 .section__block:nth-child(even) {
   background-color: #101E2E;
+  border-top: 1px inset #000000;
 }
 
 .section__title {
   color: #FFFFFF;
   font-size: 50px;
+  margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -334,6 +336,7 @@ body {
     padding: 20px 50px;
   }
 }
+/** Base - General **/
 /** Layouts - Grid **/
 .grid__container {
   display: grid;
@@ -342,7 +345,7 @@ body {
 }
 
 .grid__img {
-  filter: grayscale(1);
+  filter: opacity(0.75);
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -352,7 +355,7 @@ body {
 }
 .grid__img:hover {
   cursor: pointer;
-  filter: grayscale(0);
+  filter: opacity(1) drop-shadow(2px 4px 6px #000000);
   opacity: 1;
 }
 .grid__img--small {
@@ -421,7 +424,6 @@ body {
 #about {
   display: flex;
   flex-direction: column;
-  gap: 20px 0;
 }
 
 @keyframes pulse {
@@ -463,6 +465,7 @@ body {
   flex-wrap: wrap;
   gap: 20px 0;
   justify-content: space-between;
+  margin: 15px 0 25px 0;
   padding: 30px;
 }
 
@@ -491,4 +494,46 @@ body {
     flex-direction: row;
     padding: 30px 60px;
   }
+}
+/** Base - General **/
+/** Sections - Team **/
+.teams__list {
+  background-color: #171A1E;
+  filter: drop-shadow(0 0 5px #000000);
+  padding: 10px 20px;
+}
+
+.team__character {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.character__informations {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+  justify-content: center;
+  list-style: none;
+}
+
+.character__image {
+  background-color: #E8530E;
+  display: flex;
+  filter: drop-shadow(0 0 5px #E8530E);
+  margin: 10px auto;
+  padding: 5px;
+}
+
+.character__pictures {
+  align-items: end;
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  justify-content: center;
+}
+
+.character__picture {
+  border: 1px solid #FFFFFF;
+  width: 250px;
 }/*# sourceMappingURL=style.css.map */
