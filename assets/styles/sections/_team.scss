@@ -21,8 +21,9 @@
 .character__image {
     background-color: colors.$orange;
     filter: drop-shadow(0 0 5px colors.$orange);
-    margin: 0 0 0 15px;
+    margin: auto;
     padding: 10px;
+    width: fit-content;
 }
 
 // Informations
@@ -42,6 +43,7 @@
         flex-direction: column;
         font-weight: bold;
     }
+    
     > li > span:nth-child(2) {
         font-weight: 300;
     }
@@ -80,6 +82,11 @@
     .team__character {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    // Image
+    .character__image {
+        margin: 0 0 0 15px;
     }
 
     // Informations

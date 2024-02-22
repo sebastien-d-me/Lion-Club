@@ -3,6 +3,10 @@
 .nav__mobile {
     height: 40px;
     width: 40px;
+
+    &--close {
+        margin-top: 25px;
+    }
 }
 
 // List
@@ -22,6 +26,7 @@
     &--separator {
         transform: rotate(90deg);
     }
+
     &--icons {
         gap: 0 25px;
     }

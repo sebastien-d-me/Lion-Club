@@ -18,6 +18,14 @@
         height: 2.5px;
         margin: 0 15px;
     }
+    
+    &::before {
+        margin-left: 0;
+    }
+
+    &::after {
+        margin-right: 0;
+    }
 }
 
 @media screen and (min-width: 1150px) {
