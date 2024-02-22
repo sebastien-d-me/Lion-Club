@@ -191,7 +191,7 @@ body {
   background-color: #E8530E;
   border-radius: 50%;
   bottom: 25px;
-  display: flex;
+  display: none;
   filter: drop-shadow(0 0 5px #000000);
   flex-direction: column;
   height: 55px;
@@ -199,15 +199,17 @@ body {
   padding: 5px;
   position: fixed;
   right: 25px;
+  transition: 0.5s;
   width: 55px;
   z-index: 1;
+}
+.scroll__top:hover {
+  background-color: #AE3C8E;
+  cursor: pointer;
 }
 
 .scroll__icon {
   width: 38px;
-}
-.scroll__icon:hover {
-  cursor: pointer;
 }
 
 @media screen and (min-width: 1150px) {

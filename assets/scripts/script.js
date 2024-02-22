@@ -1,4 +1,4 @@
-/** Menu **/
+/** General - Menu **/
 const htmlTag = document.querySelector("html");
 const openMenu = document.querySelector(".nav__mobile--open");
 const closeMenu = document.querySelector(".nav__mobile--close");
@@ -21,6 +21,16 @@ closeMenu.addEventListener("click", mobileMenu);
 navLinks.forEach(navLink => {
     navLink.addEventListener("click", mobileMenu);
 });
+
+
+/** General - Scroll **/
+const scrollToTop = document.querySelector(".scroll__top");
+
+window.addEventListener("scroll", () => {
+    let scroll = this.scrollY;
+    scroll >= 1000 ? scrollToTop.classList.add("show") : scrollToTop.classList.remove("show");
+});
+
 
 
 /** About - Countdown **/
@@ -57,7 +67,6 @@ new Glider(gliderTeams, {
     dots: ".glider__dots",
     slidesToShow: 1
 });
-
 
 
 /** Footer **/
