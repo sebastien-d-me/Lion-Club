@@ -511,12 +511,14 @@ body {
 }
 
 .character__informations {
+  align-items: center;
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
   gap: 15px 0;
   justify-content: center;
   list-style: none;
+  text-align: center;
 }
 
 .character__image {
@@ -539,12 +541,17 @@ body {
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
+  max-width: 100%;
+  width: 310px;
 }
 
 @media screen and (min-width: 1150px) {
   .team__character {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .character__informations {
+    align-items: unset;
+    text-align: left;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -18,12 +18,14 @@
 
 // Informations
 .character__informations {
+    align-items: center;
     color: colors.$white-full;
     display: flex;
     flex-direction: column;
     gap: 15px 0;
     justify-content: center;
     list-style: none;
+    text-align: center;
 }
 
 // Image
@@ -47,7 +49,8 @@
     border: 1px solid colors.$white-full;
     height: 150px;
     object-fit: cover;
-    width: 100%;
+    max-width: 100%;
+    width: 310px;
 }
 
 /// Responsive
@@ -56,5 +59,11 @@
     .team__character {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    // Informations
+    .character__informations {
+        align-items: unset;
+        text-align: left;
     }
 }
