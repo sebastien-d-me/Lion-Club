@@ -759,6 +759,7 @@ textarea.form__input {
 
 .banner__video {
   display: flex;
+  filter: drop-shadow(0 0 5px #000000);
   height: 500px;
   -o-object-fit: cover;
      object-fit: cover;

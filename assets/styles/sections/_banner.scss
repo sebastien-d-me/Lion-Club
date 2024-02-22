@@ -10,6 +10,7 @@
 // Video
 .banner__video {
     display: flex;
+    filter: drop-shadow(0 0 5px colors.$black-full);
     height: 500px;
     object-fit: cover;
     width: 100%;
