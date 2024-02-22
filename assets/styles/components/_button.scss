@@ -19,6 +19,19 @@
         background-color: colors.$mauve;
         box-shadow: 0 0 5px colors.$mauve, 0 0 25px colors.$mauve, 0 0 50px colors.$mauve, 0 0 200px colors.$mauve;
         color: colors.$white-full;
+
+        > .btn__border {
+            display: none;
+        }
+    }
+
+    &--second {
+        color: colors.$orange;
+
+        &:hover {
+            background-color: colors.$orange;
+            box-shadow: 0 0 5px colors.$orange, 0 0 25px colors.$orange, 0 0 50px colors.$orange, 0 0 200px colors.$orange;
+        }
     }
 }
 
@@ -70,7 +83,7 @@
 
     &:nth-child(1) {
         animation: borderLeft 1s linear infinite;
-        background: linear-gradient(90deg, transparent, colors.$mauve);
+        background: linear-gradient(90deg, transparent, colors.$blue);
         height: 2px;
         left: 0;
         top: 0;
@@ -80,7 +93,7 @@
     &:nth-child(2) {
         animation: borderTop 1s linear infinite;
         animation-delay: 0.25s;
-        background: linear-gradient(180deg, transparent, colors.$mauve);
+        background: linear-gradient(180deg, transparent, colors.$orange);
         height: 100%;
         right: 0;
         top: -100px;
@@ -90,7 +103,7 @@
     &:nth-child(3) {
         animation: borderRight 1s linear infinite;
         animation-delay: 0.5s;
-        background: linear-gradient(270deg, transparent, colors.$mauve);
+        background: linear-gradient(270deg, transparent, colors.$pink);
         bottom: 0;
         height: 2px;
         right: -100%;
