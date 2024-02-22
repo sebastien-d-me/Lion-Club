@@ -1,0 +1,68 @@
+/** Layouts - Form **/
+@use "../abstracts/colors" as colors;
+
+
+.form__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto;
+}
+
+// Row
+.form__row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &--inline {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.form__col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+// Label
+.form__label {
+    color: colors.$white-full;
+    font-size: 18px;
+}
+
+// Input
+.form__input {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+
+    &[type="checkbox"] {
+        width: 50px;
+    }
+}
+textarea.form__input {
+    height: 150px;
+    resize: none;
+}
+
+
+/// Responsive
+@media screen and (min-width: 1150px) {
+    .form__contact {
+        width: 500px;
+    }
+
+    // Row
+    .form__row {       
+        &--inline {
+            flex-direction: row;
+        }
+    }
+
+    .form__col {
+        width: 50%;
+    }
+}

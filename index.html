@@ -229,14 +229,38 @@
         <!-- Contact -->
         <section class="section__block" id="contact">
             <h2 class="section__title">Nous contacter</h2>
-            <form action="#" method="POST">
-                <a class="btn btn--second" href="#contact">
-                    <span class="btn__border"></span>
-                    <span class="btn__border"></span>
-                    <span class="btn__border"></span>
-                    <span class="btn__border"></span>
-                    Envoyer
-                </a>
+            <form action="#" class="form__contact" method="POST">
+                <div class="form__row form__row--inline">
+                    <div class="form__col">
+                        <label class="form__label" for="form__lastname">Nom :</label>
+                        <input class="form__input" id="form__lastname" placeholder="DOE" type="text">
+                    </div>
+                    <div class="form__col">
+                        <label class="form__label" for="form__firstname">Prénom :</label>
+                        <input class="form__input" id="form__firstname" placeholder="John" type="text">
+                    </div>
+                </div>
+                <div class="form__row">
+                    <label class="form__label" for="form__email">Adresse email :</label>
+                    <input class="form__input" id="form__email" placeholder="john.doe@mail.com" type="text">
+                </div>
+                <div class="form__row">
+                    <label class="form__label" for="form__message">Message :</label>
+                    <textarea class="form__input" id="form__message" placeholder="Lorem ipsum..."></textarea>
+                </div>
+                <div class="form__row form__row--inline">
+                    <input class="form__input" id="form__agree" type="checkbox">
+                    <label class="form__label" for="form__agree">J'accepte que mes informations soient transmises aux dirigeant du site. Comme la loi l'indique, vous disposez d'un droit de retrait, de modification et de consultation.</label>
+                </div>
+                <div class="form__row">
+                    <a class="btn btn--second" href="#contact">
+                        <span class="btn__border"></span>
+                        <span class="btn__border"></span>
+                        <span class="btn__border"></span>
+                        <span class="btn__border"></span>
+                        Envoyer
+                    </a>
+                </div>
             </form>
         </section>
     </main>
