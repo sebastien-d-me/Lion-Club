@@ -13,6 +13,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    justify-content: space-between;
+    padding: 5px;
 }
 
 // Image
@@ -45,14 +47,14 @@
     }
 }
 
-// Gallery
+// Pictures
 .character__pictures {
     align-items: end;
     display: flex;
     flex-direction: column;
     gap: 30px 0;
     justify-content: center;
-    margin-right: 15px;
+    margin: 0 auto;
 }
 
 .character__picture {
@@ -67,6 +69,7 @@
 .glider__dots {
     background: colors.$black-full;
     border-radius: 20px;
+    margin: 20px auto 0 auto;
     padding: 10px 20px;
     width: fit-content;
 }
@@ -85,5 +88,10 @@
             display: unset;
             flex-direction: unset;
         }
+    }
+
+    // Pictures
+    .character__pictures {
+        margin-right: 15px;
     }
 }
