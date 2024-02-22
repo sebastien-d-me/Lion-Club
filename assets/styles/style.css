@@ -520,6 +520,7 @@ body {
   background-color: #E8530E;
   filter: drop-shadow(0 0 5px #E8530E);
   margin: 0 0 0 15px;
+  padding: 10px;
 }
 
 .character__informations {
@@ -527,15 +528,19 @@ body {
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
-  font-size: 24px;
+  font-size: 23px;
   gap: 15px 0;
   justify-content: center;
   list-style: none;
   text-align: center;
 }
 .character__informations > li > span:nth-child(1) {
+  display: flex;
+  flex-direction: column;
   font-weight: bold;
-  text-decoration: underline;
+}
+.character__informations > li > span:nth-child(2) {
+  font-weight: 300;
 }
 
 .character__pictures {
@@ -568,5 +573,9 @@ body {
   .team__character {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .character__informations > li > span:nth-child(1) {
+    display: unset;
+    flex-direction: unset;
   }
 }/*# sourceMappingURL=style.css.map */
