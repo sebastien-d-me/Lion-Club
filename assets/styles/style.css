@@ -545,11 +545,14 @@ body {
 /** Base - General **/
 /** Layouts - Section **/
 .section__block {
+  border-top: 1px inset #000000;
   padding: 20px 15px;
+}
+.section__block:nth-child(1) {
+  border-top: none;
 }
 .section__block:nth-child(even) {
   background-color: #101E2E;
-  border-top: 1px inset #000000;
 }
 
 .section__title {
@@ -653,6 +656,14 @@ body {
 }
 .form__input[type=checkbox] {
   width: 50px;
+}
+.form__input::-moz-placeholder {
+  color: #FFFFFF;
+  opacity: 0.75;
+}
+.form__input::placeholder {
+  color: #FFFFFF;
+  opacity: 0.75;
 }
 
 textarea.form__input {

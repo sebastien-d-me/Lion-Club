@@ -38,6 +38,11 @@
     &[type="checkbox"] {
         width: 50px;
     }
+
+    &::placeholder {
+        color: colors.$white-full;
+        opacity: 0.75;
+    }
 }
 textarea.form__input {
     height: 150px;
