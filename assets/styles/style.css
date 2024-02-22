@@ -504,8 +504,10 @@ body {
 }
 
 .team__character {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
 }
 
 .character__informations {
@@ -538,4 +540,11 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+
+@media screen and (min-width: 1150px) {
+  .team__character {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }/*# sourceMappingURL=style.css.map */

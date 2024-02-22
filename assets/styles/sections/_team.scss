@@ -10,8 +10,10 @@
 
 // Characters
 .team__character {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
 }
 
 // Informations
@@ -46,4 +48,13 @@
     height: 150px;
     object-fit: cover;
     width: 100%;
+}
+
+/// Responsive
+@media screen and (min-width: 1150px) {
+    // Characters
+    .team__character {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

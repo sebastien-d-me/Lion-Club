@@ -53,7 +53,19 @@ const countdown = setInterval(function() {
 /** About - Teams **/
 new Glider(document.querySelector(".glider"), {
     dots: "#dots",
+    /*responsive: [
+        {
+            breakpoint: 775,
+            settings: {
+                duration: 0.25,
+                itemWidth: 150,
+                slidesToShow: "auto",
+                slidesToScroll: "auto"
+            }
+        }
+    ],*/
     slidesToShow: 1,
+    scrollLock: true
 });
 
 
