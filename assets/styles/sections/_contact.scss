@@ -1,0 +1,49 @@
+/** Sections - Contact **/
+@use "../abstracts/colors" as colors;
+
+
+// Container
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    margin: auto;
+}
+
+// Informations
+.contact__informations {
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+    margin: auto;
+}
+
+// Localisation
+.contact__localisation {
+    color: colors.$white-full;
+    text-align: center;
+
+    &:nth-of-type(1) {
+        font-weight: bold;
+    }
+}
+
+// Map
+.contact__map {
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+}
+
+/// Responsive
+@media screen and (min-width: 1150px) {
+    // Container
+    .contact__container {
+        width: 80%;
+    }
+
+    // Informations
+    .contact__informations {
+        margin: unset;
+    }
+}

@@ -4,17 +4,30 @@
 
 .modal {
     background-color: colors.$white-full;
-    border: 2.5px solid colors.$black-full;
-    display: flex;
+    border: none;
+    filter: drop-shadow(0 0 5px colors.$black-full);
     flex-direction: column;
-    gap: 10px 0;
+    gap: 15px 0;
     height: fit-content;
     margin: auto;
-    padding: 10px;
+    padding: 15px 20px;
     position: fixed;
     width: fit-content;
+
+    &[open] {
+        display: flex;
+    }
+
+    &::backdrop {
+        background-color: colors.$black-transparent;
+    }
 }
 
+// Title
+.modal__title {
+    display: flex;
+    width: fit-content;
+}
 
 // Close
 .modal__close {
@@ -23,4 +36,5 @@
     position: absolute;
     right: 10px;
     top: 10px;
+    z-index: 1;
 }

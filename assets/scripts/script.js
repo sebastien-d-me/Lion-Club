@@ -64,6 +64,7 @@ const gliderTeams = document.querySelector(".teams__glider");
 
 new Glider(gliderTeams, {
     dots: ".glider__dots",
+    scrollLock: true,
     slidesToShow: 1
 });
 
