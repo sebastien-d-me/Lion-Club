@@ -53,10 +53,6 @@ textarea.form__input {
 
 /// Responsive
 @media screen and (min-width: 1150px) {
-    .form__contact {
-        width: 800px;
-    }
-
     // Row
     .form__row {       
         &--inline {

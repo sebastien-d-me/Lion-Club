@@ -667,9 +667,6 @@ textarea.form__input {
 }
 
 @media screen and (min-width: 1150px) {
-  .form__contact {
-    width: 800px;
-  }
   .form__row--inline {
     flex-direction: row;
   }
@@ -940,7 +937,7 @@ textarea.form__input {
 
 .contact__map {
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 650px;
   width: 100%;
 }
 
