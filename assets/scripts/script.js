@@ -32,7 +32,6 @@ window.addEventListener("scroll", () => {
 });
 
 
-
 /** About - Countdown **/
 const countdownDays = document.querySelector(".countdown__value--days");
 const countdownHours = document.querySelector(".countdown__value--hours");
@@ -68,6 +67,20 @@ new Glider(gliderTeams, {
     slidesToShow: 1
 });
 
+
+/** Form - Modal **/
+const formContact = document.querySelector(".form__contact");
+const formModal = document.querySelector(".form__modal");
+const formModalClose = document.querySelector(".modal__close");
+
+formContact.addEventListener("submit", function(event) {
+    event.preventDefault();
+    formModal.showModal();
+});
+
+formModalClose.addEventListener("click", function() {
+    formModal.close();
+});
 
 /** Footer **/
 const footerCopyright = document.querySelector(".footer__copyright");

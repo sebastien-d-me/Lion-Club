@@ -3,6 +3,8 @@
 
 
 .btn {
+    background-color: unset;
+    border: none;
     color: colors.$mauve;
     display: inline-block;
     font-size: 24px;
@@ -19,6 +21,7 @@
         background-color: colors.$mauve;
         box-shadow: 0 0 5px colors.$mauve, 0 0 25px colors.$mauve, 0 0 50px colors.$mauve, 0 0 200px colors.$mauve;
         color: colors.$white-full;
+        cursor: pointer;
 
         > .btn__border {
             display: none;

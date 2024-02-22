@@ -1,0 +1,26 @@
+/** Layouts - Modal **/
+@use "../abstracts/colors" as colors;
+
+
+.modal {
+    background-color: colors.$white-full;
+    border: 2.5px solid colors.$black-full;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    height: fit-content;
+    margin: auto;
+    padding: 10px;
+    position: fixed;
+    width: fit-content;
+}
+
+
+// Close
+.modal__close {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
