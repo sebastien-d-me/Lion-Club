@@ -514,7 +514,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 10px;
 }
 
 .character__informations {
@@ -532,8 +531,6 @@ body {
   background-color: #E8530E;
   display: flex;
   filter: drop-shadow(0 0 5px #E8530E);
-  margin: auto;
-  padding: 5px;
 }
 
 .character__pictures {
