@@ -15,10 +15,12 @@
     <header class="header__block">
         <div class="header__informations">
             <img alt="Logo du site" class="header__logo" loading="lazy" src="./assets/images/logo/logo.png">
-            <a class="link" href="#">
-                <h1 class="header__title">Lion Club</h1>
-            </a>
-            <img alt="Ouvrir le menu" class="nav__mobile nav__mobile--open" loading="lazy" src="./assets/images/icons/menu_open.svg">
+            <div class="header__container">
+                <a class="link" href="#">
+                    <h1 class="header__title">Lion Club</h1>
+                </a>
+                <img alt="Ouvrir le menu" class="nav__mobile nav__mobile--open" loading="lazy" src="./assets/images/icons/menu_open.svg">
+            </div>
         </div>
         <nav class="header__nav">
             <ul class="nav__list">
@@ -111,8 +113,9 @@
         <section class="section__block" id="team">
             <h2 class="section__title">Nos DJ</h2>
             <div class="teams__list">
-                <div class="glider">
+                <div class="teams__glider">
                     <div class="team__character">
+                        <img alt="DJ Infinitix" class="character__image" loading="lazy" src="./assets/images/dj/dj_infinitix.png">
                         <ul class="character__informations">
                             <li>
                                 <strong>Nom :</strong> DJ Infinitix
@@ -130,13 +133,13 @@
                                 <strong>Horaires :</strong> 22h00 - 00h00
                             </li>
                         </ul>
-                        <img alt="DJ Infinitix" class="character__image" loading="lazy" src="./assets/images/dj/dj_infinitix.png">
                         <div class="character__pictures">
-                            <img alt="" class="character__picture" src="./assets/images/dj/slider/dj_1_1.webp">
-                            <img alt="" class="character__picture" src="./assets/images/dj/slider/dj_1_2.webp">
+                            <img alt="Illustration DJ 1 - 1" class="character__picture" src="./assets/images/dj/slider/dj_1_1.webp">
+                            <img alt="Illustration DJ 1 - 2" class="character__picture" src="./assets/images/dj/slider/dj_1_2.webp">
                         </div>
                     </div>
                     <div class="team__character">
+                        <img alt="DJ Pulse" class="character__image" loading="lazy" src="./assets/images/dj/dj_pulse.png">
                         <ul class="character__informations">
                             <li>
                                 <strong>Nom :</strong> DJ Pulse
@@ -154,13 +157,13 @@
                                 <strong>Horaires :</strong> 22h00 - 05h00
                             </li>
                         </ul>
-                        <img alt="DJ Pulse" class="character__image" loading="lazy" src="./assets/images/dj/dj_pulse.png">
                         <div class="character__pictures">
                             <img alt="Illustration DJ 2 - 1" class="character__picture" src="./assets/images/dj/slider/dj_2_1.webp">
                             <img alt="Illustration DJ 2 - 2" class="character__picture" src="./assets/images/dj/slider/dj_2_2.webp">
                         </div>
                     </div>
                     <div class="team__character">
+                        <img alt="DJ Sonato" class="character__image" loading="lazy" src="./assets/images/dj/dj_sonato.png">
                         <ul class="character__informations">
                             <li>
                                 <strong>Nom :</strong> DJ Sonato
@@ -178,14 +181,13 @@
                                 <strong>Horaires :</strong> 00h00 - 05h30
                             </li>
                         </ul>
-                        <img alt="DJ Infinitix" class="character__image" loading="lazy" src="./assets/images/dj/dj_sonato.png">
                         <div class="character__pictures">
                             <img alt="Illustration DJ 3 - 1" class="character__picture" src="./assets/images/dj/slider/dj_3_1.webp">
                             <img alt="Illustration DJ 3 - 2" class="character__picture" src="./assets/images/dj/slider/dj_3_2.webp">
                         </div>
                     </div>
                 </div>
-                <div id="dots"></div>
+                <div class="glider__dots"></div>
             </div>
         </section>
 

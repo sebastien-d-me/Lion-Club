@@ -51,19 +51,10 @@ const countdown = setInterval(function() {
 
 
 /** About - Teams **/
-new Glider(document.querySelector(".glider"), {
-    dots: "#dots",
-    /*responsive: [
-        {
-            breakpoint: 775,
-            settings: {
-                duration: 0.25,
-                itemWidth: 150,
-                slidesToShow: "auto",
-                slidesToScroll: "auto"
-            }
-        }
-    ],*/
+const gliderTeams = document.querySelector(".teams__glider");
+
+new Glider(gliderTeams, {
+    dots: ".glider__dots",
     slidesToShow: 1,
     scrollLock: true
 });

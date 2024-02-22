@@ -33,7 +33,7 @@
     background-color: colors.$orange;
     display: flex;
     filter: drop-shadow(0 0 5px colors.$orange);
-    margin: 10px auto;
+    margin: auto;
     padding: 5px;
 }
 
@@ -51,6 +51,14 @@
     object-fit: cover;
     max-width: 100%;
     width: 310px;
+}
+
+// Dots
+.glider__dots {
+    background: colors.$black-full;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: fit-content;
 }
 
 /// Responsive
