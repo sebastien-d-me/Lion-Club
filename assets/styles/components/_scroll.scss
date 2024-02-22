@@ -1,0 +1,45 @@
+/** Components - Scroll **/
+@use "../abstracts/colors" as colors;
+
+
+.scroll__top {
+    align-items: center;
+    background-color: colors.$orange;
+    border-radius: 50%;
+    bottom: 25px;
+    display: flex;
+    filter: drop-shadow(0 0 5px colors.$black-full);
+    flex-direction: column;
+    height: 55px;
+    justify-content: center;
+    padding: 5px;
+    position: fixed;
+    right: 25px;
+    width: 55px;
+    z-index: 1;
+}
+
+// Icon
+.scroll__icon {
+    width: 38px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+/// Responsive
+@media screen and (min-width: 1150px) {
+    .scroll__top {
+        bottom: 35px;
+        height: 64px;
+        right: 35px;
+        width: 64px;
+    }
+
+    // Icon
+    .scroll__icon {
+        width: 48px;
+    }
+}

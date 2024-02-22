@@ -40,7 +40,7 @@
 /** Abstracts - Colors **/
 html, body {
   scroll-behavior: smooth;
-  scroll-padding-top: 170px;
+  scroll-padding-top: 220px;
 }
 
 body {
@@ -50,6 +50,11 @@ body {
   min-height: 100vh;
 }
 
+@media screen and (min-width: 1150px) {
+  html, body {
+    scroll-padding-top: 160px;
+  }
+}
 /** Components **/
 /** Base - General **/
 /** Components - Button **/
@@ -180,6 +185,43 @@ body {
 }
 
 /** Base - General **/
+/** Components - Scroll **/
+.scroll__top {
+  align-items: center;
+  background-color: #E8530E;
+  border-radius: 50%;
+  bottom: 25px;
+  display: flex;
+  filter: drop-shadow(0 0 5px #000000);
+  flex-direction: column;
+  height: 55px;
+  justify-content: center;
+  padding: 5px;
+  position: fixed;
+  right: 25px;
+  width: 55px;
+  z-index: 1;
+}
+
+.scroll__icon {
+  width: 38px;
+}
+.scroll__icon:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1150px) {
+  .scroll__top {
+    bottom: 35px;
+    height: 64px;
+    right: 35px;
+    width: 64px;
+  }
+  .scroll__icon {
+    width: 48px;
+  }
+}
+/** Base - General **/
 /** Components - Separator **/
 .separator {
   align-items: center;
@@ -214,7 +256,7 @@ body {
   filter: drop-shadow(0 0 5px #000000);
   flex-direction: column;
   justify-content: center;
-  min-height: 200px;
+  min-height: 220px;
   padding: 15px 20px;
   position: fixed;
   top: 0;
@@ -311,7 +353,7 @@ body {
 /** Layouts - Main **/
 .main__block {
   flex: 1 0 auto;
-  margin-top: 200px;
+  margin-top: 220px;
   padding-top: 5px;
 }
 
@@ -546,7 +588,7 @@ body {
 }
 
 .character__pictures {
-  align-items: end;
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
   gap: 30px 0;

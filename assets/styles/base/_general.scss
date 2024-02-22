@@ -4,7 +4,7 @@
 
 html, body {
     scroll-behavior: smooth;
-    scroll-padding-top: 170px;
+    scroll-padding-top: 220px;
 }
 
 body {
@@ -12,4 +12,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+
+/// Responsive
+@media screen and (min-width: 1150px) {
+    html, body {
+        scroll-padding-top: 160px;
+    }
 }
