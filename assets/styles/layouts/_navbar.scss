@@ -46,6 +46,10 @@
     transition: 0.5s;
     width: 28px;
 
+    &:hover {
+        cursor: pointer;
+    }
+
     &--light:hover {
         filter: invert(38%) sepia(78%) saturate(2742%) hue-rotate(357deg) brightness(94%) contrast(93%);
     }

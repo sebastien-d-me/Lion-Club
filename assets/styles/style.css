@@ -530,6 +530,9 @@ body {
   transition: 0.5s;
   width: 28px;
 }
+.color__mode:hover {
+  cursor: pointer;
+}
 .color__mode--light:hover {
   filter: invert(38%) sepia(78%) saturate(2742%) hue-rotate(357deg) brightness(94%) contrast(93%);
 }
