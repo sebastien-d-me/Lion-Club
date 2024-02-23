@@ -544,6 +544,11 @@ body {
   gap: 0 25px;
 }
 
+.nav__link {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
 .nav__item--mode {
   display: flex;
 }
@@ -577,6 +582,9 @@ body {
   }
 }
 @media screen and (min-width: 1350px) {
+  .header__nav {
+    overflow-y: unset;
+  }
   .nav__list {
     gap: 0 35px;
   }

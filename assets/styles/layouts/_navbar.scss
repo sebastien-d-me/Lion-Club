@@ -40,6 +40,12 @@
     }
 }
 
+// Link
+.nav__link {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
 // Color mode
 .nav__item--mode {
     display: flex;
@@ -84,6 +90,10 @@
 }
 
 @media screen and (min-width: 1350px) {
+    .header__nav {
+        overflow-y: unset;
+    }
+
     // List
     .nav__list {
         gap: 0 35px;
