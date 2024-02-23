@@ -60,7 +60,7 @@ darkMode.addEventListener("click", function() {
 });
 
 /*** HOME ***/
-if(document.body.getAttribute("id") === "home") {
+if(document.body.getAttribute("id") === "home_page") {
     /** Home - Age **/
     const mainBlock = document.querySelector(".main__block");
     const ageModal = document.querySelector(".age__modal");
