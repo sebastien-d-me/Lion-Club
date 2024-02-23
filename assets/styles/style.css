@@ -716,7 +716,8 @@ body {
   width: 100%;
 }
 .form__input[type=checkbox] {
-  width: 50px;
+  margin-right: 10px;
+  width: 15px;
 }
 .form__input::-moz-placeholder {
   opacity: 0.75;
