@@ -27,3 +27,10 @@
     transform: translate(-50%, -50%);
     width: calc(100% - 100px);
 }
+
+/// Responsive
+@media screen and (min-width: 1150px) {
+    .banner__video_overlay {
+        width: calc(100% - 30px);
+    }
+}
