@@ -189,14 +189,13 @@
 }
 
 /** Base - General **/
-/** Abstracts - Colors **/
 html, body {
   scroll-behavior: smooth;
   scroll-padding-top: 105px;
 }
 
 body {
-  background-color: #06162A;
+  background-color: var(--body-background);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -208,8 +207,26 @@ body {
   }
 }
 /** Components **/
-/** Base - General **/
 /** Components - Button **/
+/** Abstracts - Colors **/
+:root {
+  --body-background: #06162A;
+  --header-background: rgba(23, 26, 30, 0.5803921569);
+  --section-border: rgba(23, 26, 30, 0.5803921569);
+  --section-even-background: #101E2E;
+  --input-border: #FFFFFF;
+  --text-color: #FFFFFF;
+}
+
+.light {
+  --body-background: #FFFFFF;
+  --header-background: #000000;
+  --section-border: #E2E2E2;
+  --section-even-background: #F4F4F4;
+  --input-border: #000000;
+  --text-color: #000000;
+}
+
 .btn {
   background-color: unset;
   border: none;
@@ -314,7 +331,7 @@ body {
   width: 2px;
 }
 
-/** Base - General **/
+/** Components - Button **/
 /** Components - Link **/
 .link {
   background-image: linear-gradient(to right, #E8530E, #FF7CAA 50%, #ffffff 50%);
@@ -349,7 +366,7 @@ body {
   width: 100%;
 }
 
-/** Base - General **/
+/** Components - Button **/
 /** Components - Scroll **/
 .scroll__top {
   align-items: center;
@@ -392,11 +409,10 @@ body {
     width: 48px;
   }
 }
-/** Base - General **/
+/** Components - Button **/
 /** Components - Separator **/
 .separator {
   align-items: center;
-  color: #FFFFFF;
   display: flex;
   font-size: 20px;
   text-transform: uppercase;
@@ -429,11 +445,11 @@ body {
   }
 }
 /** Layouts **/
-/** Base - General **/
+/** Components - Button **/
 /** Layouts - Header **/
 .header__block {
   align-items: center;
-  background-color: rgba(23, 26, 30, 0.5803921569);
+  background-color: var(--header-background);
   color: #FFFFFF;
   display: flex;
   filter: drop-shadow(0 0 5px #000000);
@@ -491,7 +507,7 @@ body {
     width: 130px;
   }
 }
-/** Base - General **/
+/** Components - Button **/
 /** Layouts - Navbar **/
 .nav__mobile {
   height: 40px;
@@ -568,21 +584,21 @@ body {
     margin-top: 160px;
   }
 }
-/** Base - General **/
+/** Components - Button **/
 /** Layouts - Section **/
 .section__block {
-  border-top: 1px inset #000000;
+  border-top: 1px solid var(--section-border);
+  color: var(--text-color);
   padding: 20px 15px;
 }
 .section__block:nth-child(1) {
   border-top: none;
 }
 .section__block:nth-child(even) {
-  background-color: #101E2E;
+  background-color: var(--section-even-background);
 }
 
 .section__title {
-  color: #FFFFFF;
   font-size: 40px;
   margin-bottom: 20px;
   text-align: center;
@@ -597,7 +613,7 @@ body {
     font-size: 50px;
   }
 }
-/** Base - General **/
+/** Components - Button **/
 /** Layouts - Grid **/
 .grid__container {
   display: grid;
@@ -652,7 +668,7 @@ body {
     height: 150px;
   }
 }
-/** Base - General **/
+/** Components - Button **/
 /** Layouts - Form **/
 .form__row {
   display: flex;
@@ -671,14 +687,13 @@ body {
 }
 
 .form__label {
-  color: #FFFFFF;
   font-size: 18px;
 }
 
 .form__input {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid var(--input-border);
   color: #FFFFFF;
   font-size: 16px;
   padding: 10px;
@@ -688,11 +703,9 @@ body {
   width: 50px;
 }
 .form__input::-moz-placeholder {
-  color: #FFFFFF;
   opacity: 0.75;
 }
 .form__input::placeholder {
-  color: #FFFFFF;
   opacity: 0.75;
 }
 
@@ -709,7 +722,7 @@ textarea.form__input {
     width: 50%;
   }
 }
-/** Base - General **/
+/** Components - Button **/
 /** Layouts - Modal **/
 .modal {
   background-color: #FFFFFF;
@@ -747,7 +760,7 @@ textarea.form__input {
   z-index: 1;
 }
 
-/** Base - General **/
+/** Components - Button **/
 /** Layouts - Footer **/
 .footer__block {
   align-items: center;
@@ -781,7 +794,7 @@ textarea.form__input {
   }
 }
 /** Sections **/
-/** Base - General **/
+/** Components - Button **/
 /** Layouts - Banner **/
 .banner {
   border-top: 1px inset #000000;
@@ -800,14 +813,16 @@ textarea.form__input {
 
 .banner__video_overlay {
   background-color: rgba(23, 26, 30, 0.5803921569);
-  height: 100%;
-  left: 0;
+  border-radius: 5px;
+  height: calc(100% - 40px);
+  left: 50%;
   position: absolute;
-  top: 0;
-  width: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 100px);
 }
 
-/** Base - General **/
+/** Components - Button **/
 /** Sections - About **/
 #about {
   display: flex;
@@ -839,7 +854,6 @@ textarea.form__input {
 }
 
 .about__description {
-  color: #FFFFFF;
   font-size: 20px;
   margin: 10px auto;
 }
@@ -887,7 +901,7 @@ textarea.form__input {
     padding: 30px 60px;
   }
 }
-/** Base - General **/
+/** Components - Button **/
 /** Sections - Team **/
 .teams__list {
   background-color: #171A1E;
@@ -975,7 +989,7 @@ textarea.form__input {
     margin-right: 15px;
   }
 }
-/** Base - General **/
+/** Components - Button **/
 /** Sections - Booking **/
 .contact__container {
   display: flex;
@@ -992,7 +1006,6 @@ textarea.form__input {
 }
 
 .contact__localisation {
-  color: #FFFFFF;
   text-align: center;
 }
 
@@ -1018,7 +1031,7 @@ textarea.form__input {
   }
 }
 /** Pages **/
-/** Base - General **/
+/** Components - Button **/
 /** Pages - Legal notice **/
 .legal__text {
   color: #FFFFFF;

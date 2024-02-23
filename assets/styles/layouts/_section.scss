@@ -3,7 +3,8 @@
 
 
 .section__block {
-    border-top: 1px inset colors.$black-full;
+    border-top: 1px solid var(--section-border);
+    color: var(--text-color);
     padding: 20px 15px;
     
     &:nth-child(1) {
@@ -11,13 +12,12 @@
     }
 
     &:nth-child(even) {
-        background-color: colors.$dark-blue-2;
+        background-color: var(--section-even-background);
     }
 }
 
 // Title
 .section__title {
-    color: colors.$white-full;
     font-size: 40px;
     margin-bottom: 20px;
     text-align: center;

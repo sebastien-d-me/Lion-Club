@@ -5,8 +5,29 @@ $black-transparent: #171A1E94;
 $blue: #41519E;
 $dark-blue-1: #06162A;
 $dark-blue-2: #101E2E;
+$grey: #E2E2E2;
+$grey-light: #F4F4F4;
 $orange: #E8530E;
 $mauve: #AE3C8E;
 $pink: #FF7CAA;
 $violet: #794897;
 $white-full: #FFFFFF;
+
+
+:root {
+    --body-background: #{$dark-blue-1};
+    --header-background: #{$black-transparent};
+    --section-border: #{$black-transparent};
+    --section-even-background: #{$dark-blue-2};
+    --input-border: #{$white-full};
+    --text-color: #{$white-full};
+}
+  
+.light {
+    --body-background: #{$white-full};
+    --header-background: #{$black-full};
+    --section-border: #{$grey};
+    --section-even-background: #{$grey-light};
+    --input-border: #{$black-full};
+    --text-color: #{$black-full};
+}

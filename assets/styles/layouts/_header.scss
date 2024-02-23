@@ -4,7 +4,7 @@
 
 .header__block {
     align-items: center;
-    background-color: colors.$black-transparent;
+    background-color: var(--header-background);
     color:colors.$white-full;
     display: flex;
     filter: drop-shadow(0 0 5px colors.$black-full);

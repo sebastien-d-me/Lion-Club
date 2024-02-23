@@ -22,7 +22,6 @@
 
 // Label
 .form__label {
-    color: colors.$white-full;
     font-size: 18px;
 }
 
@@ -30,7 +29,7 @@
 .form__input {
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid colors.$white-full;
+    border-bottom: 1px solid var(--input-border);
     color: colors.$white-full;
     font-size: 16px;
     padding: 10px;
@@ -41,7 +40,6 @@
     }
 
     &::placeholder {
-        color: colors.$white-full;
         opacity: 0.75;
     }
 }

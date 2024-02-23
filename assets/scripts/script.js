@@ -1,5 +1,7 @@
-/** General - Menu **/
 const htmlTag = document.querySelector("html");
+
+
+/** General - Menu **/
 const openMenu = document.querySelector(".nav__mobile--open");
 const closeMenu = document.querySelector(".nav__mobile--close");
 const navList = document.querySelector(".nav__list");
@@ -38,9 +40,11 @@ const darkMode = document.querySelector(".color__mode--dark");
 
 function changeColor(mode) {
     if(mode === "light") {
+        htmlTag.classList.add("light");
         lightMode.classList.toggle("hide");
         darkMode.classList.toggle("hide");
     } else {
+        htmlTag.classList.remove("light");
         lightMode.classList.toggle("hide");
         darkMode.classList.toggle("hide");
     }
