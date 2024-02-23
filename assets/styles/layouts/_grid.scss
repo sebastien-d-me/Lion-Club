@@ -50,16 +50,19 @@
         &--small {
             grid-column: span 1;
             grid-row: span 2;
+            height: 150px;
         }
 
         &--medium {
             grid-column: span 2;
             grid-row: span 2;
+            height: 150px;
         }
 
         &--large {
             grid-column: span 3;
             grid-row: span 1;
+            height: 150px;
         }
     }
 }
