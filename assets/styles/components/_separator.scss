@@ -29,8 +29,18 @@
 }
 
 @media screen and (min-width: 1150px) {
-    .separator::before,
-    .separator::after {
-        margin: 0 25px;
+    .separator {
+        .separator::before,
+        .separator::after {
+            margin: 0 25px;
+        }
+
+        &::before {
+            margin-left: 0;
+        }
+
+        &::after {
+            margin-right: 0;
+        }
     }
 }

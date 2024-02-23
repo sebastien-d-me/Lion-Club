@@ -417,9 +417,15 @@ body {
 }
 
 @media screen and (min-width: 1150px) {
-  .separator::before,
-  .separator::after {
+  .separator .separator::before,
+  .separator .separator::after {
     margin: 0 25px;
+  }
+  .separator::before {
+    margin-left: 0;
+  }
+  .separator::after {
+    margin-right: 0;
   }
 }
 /** Layouts **/
