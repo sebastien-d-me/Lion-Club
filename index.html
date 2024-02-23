@@ -70,6 +70,7 @@
             <!-- VIDEO -->
             <h2 class="section__title">À propos</h2>
             <img alt="Logo de l'entreprise" class="about__logo" loading="lazy" src="./assets/images/logo/logo.png">
+            <!-- Ajouter que c'est évènement -->
             <p class="about__description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iste blanditiis debitis non eos expedita placeat itaque quas, ea dolorem, nulla alias modi officia corrupti asperiores, tempora doloremque qui deserunt consequatur perspiciatis. Sequi id iure omnis obcaecati perspiciatis, ratione dolorem, rem, delectus autem natus sed eveniet provident consequuntur! Porro, nemo.
             </p>
@@ -223,6 +224,7 @@
         <!-- Gallery -->
         <section class="section__block" id="gallery">
             <h2 class="section__title">Galerie photos</h2>
+            <!-- rajouter textes présentation ambiances salle -->
             <div class="grid__container">
                 <img alt="Salle d'ambiance bleue" class="grid__img grid__img--large" loading="lazy" src="./assets/images/ambiances/ambiance_bleue.webp">
                 <img alt="Bar bleu et jaune" class="grid__img grid__img--medium" loading="lazy" src="./assets/images/bars/bar_bleu_jaune.webp">
@@ -265,6 +267,13 @@
                     <div class="form__rom">
                         <label class="form__label" for="form__number">Nombre de personne(s) :</label>
                         <input class="form__input" id="form__number" placeholder="2" required type="number">
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label" for="form__date">Jour ;</label>
+                        <select class="form__input" id="form__date" required>
+                            <option disabled selected>Choisir une date</option>
+                            <option>Lundi 01/07/2024 (à partir de minuit)</option>
+                        </select>
                     </div>
                     <div class="form__row form__row--inline">
                         <label class="form__label" for="form__agree">

@@ -701,7 +701,7 @@ body {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid var(--input-border);
-  color: #FFFFFF;
+  color: var(--txt-color);
   font-size: 16px;
   padding: 10px;
   width: 100%;
@@ -714,6 +714,10 @@ body {
 }
 .form__input::placeholder {
   opacity: 0.75;
+}
+
+select.form__input > option {
+  color: #000000;
 }
 
 textarea.form__input {
@@ -1000,7 +1004,7 @@ textarea.form__input {
 .contact__container {
   display: flex;
   flex-direction: column;
-  gap: 20px 0;
+  gap: 25px 0;
   margin: auto;
 }
 
