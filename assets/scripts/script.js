@@ -32,6 +32,29 @@ window.addEventListener("scroll", () => {
 });
 
 
+/** General -- Color scheme **/
+const lightMode = document.querySelector(".color__mode--light");
+const darkMode = document.querySelector(".color__mode--dark");
+
+function changeColor(mode) {
+    if(mode === "light") {
+        lightMode.classList.toggle("hide");
+        darkMode.classList.toggle("hide");
+    } else {
+        lightMode.classList.toggle("hide");
+        darkMode.classList.toggle("hide");
+    }
+}
+
+lightMode.addEventListener("click", function() {
+    changeColor("light")
+});
+
+darkMode.addEventListener("click", function() {
+    changeColor("dark")
+});
+
+
 /** About - Countdown **/
 const countdownDays = document.querySelector(".countdown__value--days");
 const countdownHours = document.querySelector(".countdown__value--hours");
@@ -64,6 +87,7 @@ const gliderTeams = document.querySelector(".teams__glider");
 
 new Glider(gliderTeams, {
     dots: ".glider__dots",
+    draggable: true,
     scrollLock: true,
     slidesToShow: 1
 });

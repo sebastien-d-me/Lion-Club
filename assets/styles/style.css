@@ -491,6 +491,7 @@ body {
     width: 130px;
   }
 }
+/** Base - General **/
 /** Layouts - Navbar **/
 .nav__mobile {
   height: 40px;
@@ -517,6 +518,23 @@ body {
 }
 .nav__item--icons {
   gap: 0 25px;
+}
+
+.nav__item--mode {
+  display: flex;
+}
+
+.color__mode {
+  align-items: center;
+  display: flex;
+  transition: 0.5s;
+  width: 28px;
+}
+.color__mode--light:hover {
+  filter: invert(38%) sepia(78%) saturate(2742%) hue-rotate(357deg) brightness(94%) contrast(93%);
+}
+.color__mode--dark:hover {
+  filter: invert(32%) sepia(17%) saturate(2415%) hue-rotate(194deg) brightness(89%) contrast(88%);
 }
 
 @media screen and (min-width: 1150px) {

@@ -1,4 +1,7 @@
 /** Layouts - Navbar **/
+@use "../abstracts/colors" as colors;
+
+
 // Mobile
 .nav__mobile {
     height: 40px;
@@ -29,6 +32,26 @@
 
     &--icons {
         gap: 0 25px;
+    }
+}
+
+// Color mode
+.nav__item--mode {
+    display: flex;
+}
+
+.color__mode {
+    align-items: center;
+    display: flex;
+    transition: 0.5s;
+    width: 28px;
+
+    &--light:hover {
+        filter: invert(38%) sepia(78%) saturate(2742%) hue-rotate(357deg) brightness(94%) contrast(93%);
+    }
+
+    &--dark:hover {
+        filter: invert(32%) sepia(17%) saturate(2415%) hue-rotate(194deg) brightness(89%) contrast(88%);
     }
 }
 
