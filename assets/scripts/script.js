@@ -59,58 +59,79 @@ darkMode.addEventListener("click", function() {
     changeColor("dark");
 });
 
-
-/** About - Countdown **/
-const countdownDays = document.querySelector(".countdown__value--days");
-const countdownHours = document.querySelector(".countdown__value--hours");
-const countdownMinutes = document.querySelector(".countdown__value--minutes");
-const countdownSecondes = document.querySelector(".countdown__value--seconds");
-
-const countdown = setInterval(function() {
-    const currentDate = new Date().getTime();
-    const eventDate = new Date("07/01/2024").getTime();
-    const diffDate = eventDate - currentDate;
+/*** HOME ***/
+if(document.body.getAttribute("id") === "home") {
+    /** Home - Age **/
+    const mainBlock = document.querySelector(".main__block");
+    const ageModal = document.querySelector(".age__modal");
+    const ageText = document.querySelector(".age__text");
+    const btnAgeYes = document.querySelector(".btn__age--yes");
+    const btnAgeNo = document.querySelector(".btn__age--no");
     
-    const countdownDaysValue = Math.floor(diffDate / (1000 * 60 * 60 * 24));
-    const countdownHoursValue = Math.floor((diffDate % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const countdownMinutesValue = Math.floor((diffDate % (1000 * 60 * 60)) / (1000 * 60));
-    const countdownSecondesValue = Math.floor((diffDate % (1000 * 60)) / 1000);
+    btnAgeYes.addEventListener("click", function() {
+        htmlTag.classList.remove("overflow--hide");
+        mainBlock.classList.remove("blur");
+        ageModal.close();
+    });
 
-    countdownDays.textContent = countdownDaysValue >= 10 ? countdownDaysValue : `0${countdownDaysValue}`;
-    countdownHours.textContent = countdownHoursValue >= 10 ? countdownHoursValue : `0${countdownHoursValue}`;
-    countdownMinutes.textContent = countdownMinutesValue >= 10 ? countdownMinutesValue : `0${countdownMinutesValue}`;
-    countdownSecondes.textContent = countdownSecondesValue >= 10 ? countdownSecondesValue : `0${countdownSecondesValue}`;
-
-    if (diffDate < 0) {
-        clearInterval(countdown);
-    }
-}, 1000);
+    btnAgeNo.addEventListener("click", function() {
+        ageText.classList.remove("hide");
+    });
 
 
-/** About - Teams **/
-const gliderTeams = document.querySelector(".teams__glider");
+    /** About - Countdown **/
+    const countdownDays = document.querySelector(".countdown__value--days");
+    const countdownHours = document.querySelector(".countdown__value--hours");
+    const countdownMinutes = document.querySelector(".countdown__value--minutes");
+    const countdownSecondes = document.querySelector(".countdown__value--seconds");
 
-new Glider(gliderTeams, {
-    dots: ".glider__dots",
-    draggable: true,
-    scrollLock: true,
-    slidesToShow: 1
-});
+    const countdown = setInterval(function() {
+        const currentDate = new Date().getTime();
+        const eventDate = new Date("07/01/2024").getTime();
+        const diffDate = eventDate - currentDate;
+        
+        const countdownDaysValue = Math.floor(diffDate / (1000 * 60 * 60 * 24));
+        const countdownHoursValue = Math.floor((diffDate % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const countdownMinutesValue = Math.floor((diffDate % (1000 * 60 * 60)) / (1000 * 60));
+        const countdownSecondesValue = Math.floor((diffDate % (1000 * 60)) / 1000);
+
+        countdownDays.textContent = countdownDaysValue >= 10 ? countdownDaysValue : `0${countdownDaysValue}`;
+        countdownHours.textContent = countdownHoursValue >= 10 ? countdownHoursValue : `0${countdownHoursValue}`;
+        countdownMinutes.textContent = countdownMinutesValue >= 10 ? countdownMinutesValue : `0${countdownMinutesValue}`;
+        countdownSecondes.textContent = countdownSecondesValue >= 10 ? countdownSecondesValue : `0${countdownSecondesValue}`;
+
+        if (diffDate < 0) {
+            clearInterval(countdown);
+        }
+    }, 1000);
 
 
-/** Form - Modal **/
-const formContact = document.querySelector(".contact__form");
-const formModal = document.querySelector(".form__modal");
-const formModalClose = document.querySelector(".modal__close");
+    /** About - Teams **/
+    const gliderTeams = document.querySelector(".teams__glider");
 
-formContact.addEventListener("submit", function(event) {
-    event.preventDefault();
-    formModal.showModal();
-});
+    new Glider(gliderTeams, {
+        dots: ".glider__dots",
+        draggable: true,
+        scrollLock: true,
+        slidesToShow: 1
+    });
 
-formModalClose.addEventListener("click", function() {
-    formModal.close();
-});
+
+    /** Form - Modal **/
+    const formContact = document.querySelector(".contact__form");
+    const formModal = document.querySelector(".form__modal");
+    const formModalClose = document.querySelector(".modal__close");
+
+    formContact.addEventListener("submit", function(event) {
+        event.preventDefault();
+        formModal.showModal();
+    });
+
+    formModalClose.addEventListener("click", function() {
+        formModal.close();
+    });
+}
+
 
 /** Footer **/
 const footerCopyright = document.querySelector(".footer__copyright");

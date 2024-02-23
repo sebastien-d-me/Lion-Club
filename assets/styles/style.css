@@ -331,6 +331,12 @@ body {
   width: 2px;
 }
 
+@media screen and (max-height: 450px) {
+  .btn {
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+}
 /** Components - Button **/
 /** Components - Link **/
 .link {
@@ -754,11 +760,14 @@ textarea.form__input {
   gap: 15px 0;
   height: -moz-fit-content;
   height: fit-content;
-  margin: auto;
+  left: 50%;
   padding: 15px 20px;
   position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: -moz-fit-content;
   width: fit-content;
+  z-index: 1;
 }
 .modal[open] {
   display: flex;
@@ -782,6 +791,11 @@ textarea.form__input {
   z-index: 1;
 }
 
+@media screen and (max-height: 450px) {
+  .modal {
+    width: 90%;
+  }
+}
 /** Components - Button **/
 /** Layouts - Footer **/
 .footer__block {
@@ -1076,7 +1090,6 @@ textarea.form__input {
 /** Components - Button **/
 /** Pages - Legal notice **/
 .legal__text {
-  color: #FFFFFF;
   display: flex;
   flex-direction: column;
   gap: 5px 0;

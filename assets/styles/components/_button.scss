@@ -123,3 +123,11 @@
         width: 2px;        
     }
 }
+
+/// Responsive
+@media screen and (max-height: 450px) {
+    .btn {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+}
