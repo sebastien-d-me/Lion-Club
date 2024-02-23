@@ -9,7 +9,7 @@
     <link rel="icon" href="./assets/images/logo/favicon.png">
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
-<body id="home">
+<body id="home_page">
     <!-- Header -->
     <header class="header__block">
         <div class="header__informations">
@@ -143,6 +143,7 @@
 
         <!-- Bannière -->
         <section class="banner section__block">
+            <h2 class="section__title">Nos soirées</h2>
             <video autoplay class="banner__video" loop muted playsinline>
                 <source src="./assets/videos/video_promo.mp4">
             </video>
@@ -299,8 +300,8 @@
                     <div class="form__row">
                         <label class="form__label" for="form__date">Jour :</label>
                         <select class="form__input" id="form__date" required>
-                            <option disabled selected>Choisir une date</option>
-                            <option>Lundi 01/07/2024 (à partir de minuit)</option>
+                            <option disabled selected value="">Choisir une date</option>
+                            <option value="date_01_07_2024">Lundi 01/07/2024 (à partir de minuit)</option>
                         </select>
                     </div>
                     <div class="form__row form__row--inline">
