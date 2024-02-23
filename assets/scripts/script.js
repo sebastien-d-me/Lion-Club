@@ -41,23 +41,22 @@ const lightMode = document.querySelector(".color__mode--light");
 const darkMode = document.querySelector(".color__mode--dark");
 
 function changeColor(mode) {
+    lightMode.classList.toggle("hide"); 
+    darkMode.classList.toggle("hide");
+    
     if(mode === "light") {
         htmlTag.classList.add("light");
-        lightMode.classList.toggle("hide");
-        darkMode.classList.toggle("hide");
     } else {
         htmlTag.classList.remove("light");
-        lightMode.classList.toggle("hide");
-        darkMode.classList.toggle("hide");
     }
 }
 
 lightMode.addEventListener("click", function() {
-    changeColor("light")
+    changeColor("light");
 });
 
 darkMode.addEventListener("click", function() {
-    changeColor("dark")
+    changeColor("dark");
 });
 
 
