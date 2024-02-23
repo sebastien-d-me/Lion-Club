@@ -2,6 +2,7 @@ const htmlTag = document.querySelector("html");
 
 
 /** General - Menu **/
+const headerBlock = document.querySelector(".header__block");
 const openMenu = document.querySelector(".nav__mobile--open");
 const closeMenu = document.querySelector(".nav__mobile--close");
 const navList = document.querySelector(".nav__list");
@@ -11,6 +12,7 @@ const mainBlock = document.querySelector(".main__block");
 function mobileMenu() {
     if (window.innerWidth < 1150) {
         htmlTag.classList.toggle("overflow--hide");
+        headerBlock.classList.toggle("header__block--open");
         openMenu.classList.toggle("hide");
         navList.classList.toggle("show");
         mainBlock.classList.toggle("blur");
