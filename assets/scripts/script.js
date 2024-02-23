@@ -70,7 +70,7 @@ new Glider(gliderTeams, {
 
 
 /** Form - Modal **/
-const formContact = document.querySelector(".form__contact");
+const formContact = document.querySelector(".contact__form");
 const formModal = document.querySelector(".form__modal");
 const formModalClose = document.querySelector(".modal__close");
 
