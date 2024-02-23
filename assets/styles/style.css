@@ -192,7 +192,7 @@
 /** Abstracts - Colors **/
 html, body {
   scroll-behavior: smooth;
-  scroll-padding-top: 220px;
+  scroll-padding-top: 105px;
 }
 
 body {
@@ -439,7 +439,7 @@ body {
   filter: drop-shadow(0 0 5px #000000);
   flex-direction: column;
   justify-content: center;
-  min-height: 220px;
+  min-height: 105px;
   padding: 15px 20px;
   position: fixed;
   top: 0;
@@ -461,13 +461,7 @@ body {
 }
 
 .header__logo {
-  background-color: #FFFFFF;
-  border-radius: 50%;
-  height: 100px;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
-  padding: 10px;
-  width: 100px;
+  display: none;
 }
 
 .header__container {
@@ -487,7 +481,13 @@ body {
     flex-direction: row;
   }
   .header__logo {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: block;
     height: 130px;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    padding: 10px;
     width: 130px;
   }
 }
@@ -498,7 +498,7 @@ body {
   width: 40px;
 }
 .nav__mobile--close {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .nav__list {
@@ -506,7 +506,7 @@ body {
   display: none;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 15px;
   list-style: none;
 }
 
@@ -557,7 +557,7 @@ body {
 /** Layouts - Main **/
 .main__block {
   flex: 1 0 auto;
-  margin-top: 220px;
+  margin-top: 105px;
 }
 
 @media screen and (min-width: 1150px) {
@@ -973,7 +973,7 @@ textarea.form__input {
   }
 }
 /** Base - General **/
-/** Sections - Contact **/
+/** Sections - Booking **/
 .contact__container {
   display: flex;
   flex-direction: column;
