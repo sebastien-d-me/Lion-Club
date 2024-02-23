@@ -455,6 +455,7 @@ body {
   filter: drop-shadow(0 0 5px #000000);
   flex-direction: column;
   justify-content: center;
+  height: 100%;
   min-height: 105px;
   padding: 15px 20px;
   position: fixed;
@@ -490,6 +491,7 @@ body {
   .header__block {
     flex-direction: row;
     justify-content: space-between;
+    height: unset;
     min-height: 160px;
     padding: 15px 30px;
   }
@@ -509,6 +511,11 @@ body {
 }
 /** Components - Button **/
 /** Layouts - Navbar **/
+.header__nav {
+  height: 100%;
+  overflow-y: auto;
+}
+
 .nav__mobile {
   height: 40px;
   width: 40px;
@@ -849,7 +856,7 @@ textarea.form__input {
   margin: auto;
   -o-object-fit: scale-down;
      object-fit: scale-down;
-  width: 100%;
+  width: 80%;
 }
 
 .about__description {
