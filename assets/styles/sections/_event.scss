@@ -1,43 +1,58 @@
-/** Sections - About **/
+/** Sections - Event **/
 @use "../abstracts/colors" as colors;
 
 
-#about {
+#event {
     display: flex;
     flex-direction: column;
+}
+
+// Informations
+.event__informations {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 35px;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 // Logo
 @keyframes pulse {
 	0% {
-		filter: drop-shadow(0 0 5px colors.$blue);
         transform: scale(0.95);
 	}
 
 	50% {
-		filter: drop-shadow(0 0 5px colors.$blue);
         transform: scale(1.05);
 	}
 
 	100% {
-        filter: drop-shadow(0 0 0 transparent);
         transform: scale(0.95);
 	}
 }
 
-.about__logo {
+.event__logo {
     animation: pulse 2s infinite;
     display: block;
+    filter: drop-shadow(0 0 5px colors.$blue);
     height: 350px;
-    margin: auto;
     object-fit: scale-down;
     width: 80%;
 }
 
+// Event
+.event__title {
+    color: colors.$orange;
+    font-size: 24px;
+    text-align: center;
+}
+
 // Description
-.about__description {
+.event__description {
     font-size: 20px;
     margin: 10px auto;
+    text-align: justify;
 }
 
 // Countdown
@@ -73,14 +88,19 @@
   
 /// Responsive
 @media screen and (min-width: 1150px) {
+    // Informations
+    .event__informations {
+        flex-direction: row;
+    }
+
     // Logo
-    .about__logo {
+    .event__logo {
         width: fit-content;
     }
 
-    // Description
-    .about__description {
-        text-align: justify;
+    // Event
+    .event__title {
+        text-align: left;
     }
 
     // Countdown

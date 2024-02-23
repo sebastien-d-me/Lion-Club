@@ -23,8 +23,8 @@
 @use "./layouts/footer";
 
 /** Sections **/
+@use "./sections/event";
 @use "./sections/banner";
-@use "./sections/about";
 @use "./sections/team";
 @use "./sections/gallery";
 @use "./sections/booking";
