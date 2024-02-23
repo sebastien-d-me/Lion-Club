@@ -36,7 +36,7 @@
                     <a class="link nav__link" href="#gallery">Galerie photos</a>
                 </li>
                 <li class="nav__item">
-                    <a class="link nav__link" href="#contact">Contact</a>
+                    <a class="link nav__link" href="#reservation">Réservation</a>
                 </li>
                 <li class="nav__item--separator">
                     <span>|</span>
@@ -232,19 +232,11 @@
             </div>
         </section>
 
-        <!-- Contact -->
-        <section class="section__block" id="contact">
-            <h2 class="section__title">Nous contacter</h2>
+        <!-- Reservation -->
+        <section class="section__block" id="reserver">
+            <h2 class="section__title">Réservation</h2>
             <div class="contact__container">
-                <div class="contact__informations">
-                    <span class="separator">Adresse</span>
-                    <p class="contact__localisation">102 Av. des Champs-Élysées,</p>
-                    <p class="contact__localisation">75008 Paris</p>
-                    <img alt="Plan maps" class="contact__map" loading="lazy" src="./assets/images/contact/plan.webp">
-                </div>
-
-                <span class="separator">Formulaire</span>
-                <form action="#contact" class="contact__form" method="POST">
+                <form action="#reserve" class="contact__form" method="POST">
                     <div class="form__row form__row--inline">
                         <div class="form__col">
                             <label class="form__label" for="form__lastname">Nom :</label>
@@ -263,6 +255,10 @@
                         <label class="form__label" for="form__message">Message :</label>
                         <textarea class="form__input" id="form__message" placeholder="Lorem ipsum..." required></textarea>
                     </div>
+                    <div class="form__rom">
+                        <label class="form__label" for="form__number">Nombre de personne(s) :</label>
+                        <input class="form__input" id="form__number" placeholder="2" required type="number">
+                    </div>
                     <div class="form__row form__row--inline">
                         <label class="form__label" for="form__agree">
                             <input class="form__input" id="form__agree" required type="checkbox">
@@ -279,6 +275,12 @@
                         </button>
                     </div>
                 </form>
+                <div class="contact__informations">
+                    <span class="separator">Adresse</span>
+                    <p class="contact__localisation">102 Av. des Champs-Élysées,</p>
+                    <p class="contact__localisation">75008 Paris</p>
+                    <img alt="Plan maps" class="contact__map" loading="lazy" src="./assets/images/contact/plan.webp">
+                </div>
             </div>
             <dialog class="form__modal modal">
                 <h2 class="modal__title">Confirmation d'envoi</h2>
