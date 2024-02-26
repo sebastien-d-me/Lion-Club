@@ -935,30 +935,13 @@ textarea.form__input {
 .banner__video {
   border-radius: 5px;
   display: flex;
-  filter: drop-shadow(0 0 5px #000000);
+  filter: drop-shadow(0 0 5px #000000) brightness(0.5);
   height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
 
-.banner__video_overlay {
-  background-color: rgba(23, 26, 30, 0.5803921569);
-  border-radius: 5px;
-  height: 500px;
-  left: 50%;
-  margin-top: 39.5px;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: calc(100% - 30px);
-}
-
-@media screen and (min-width: 1150px) {
-  .banner__video_overlay {
-    width: calc(100% - 100px);
-  }
-}
 /** Components - Button **/
 /** Sections - Team **/
 .teams__list {
