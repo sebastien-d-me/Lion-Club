@@ -911,7 +911,7 @@ textarea.form__input {
 
 @media screen and (min-width: 1150px) {
   .event__informations {
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
   .event__logo {
     width: -moz-fit-content;
