@@ -661,34 +661,34 @@ body {
 .grid__img--small {
   grid-column: span 3;
   grid-row: span 3;
-  height: 300px;
+  height: 150px;
 }
 .grid__img--medium {
   grid-column: span 3;
   grid-row: span 3;
-  height: 300px;
+  height: 150px;
 }
 .grid__img--large {
   grid-column: span 3;
   grid-row: span 3;
-  height: 200px;
+  height: 150px;
 }
 
 @media screen and (min-width: 1150px) {
   .grid__img--small {
     grid-column: span 1;
     grid-row: span 2;
-    height: 150px;
+    height: 300px;
   }
   .grid__img--medium {
     grid-column: span 2;
     grid-row: span 2;
-    height: 150px;
+    height: 300px;
   }
   .grid__img--large {
     grid-column: span 3;
     grid-row: span 1;
-    height: 150px;
+    height: 450px;
   }
 }
 /** Components - Button **/
@@ -1007,7 +1007,7 @@ textarea.form__input {
 .glider__dots {
   background: #000000;
   border-radius: 20px;
-  margin: 20px auto 0 auto;
+  margin: 0 auto 20px auto;
   padding: 10px 20px;
   width: -moz-fit-content;
   width: fit-content;
